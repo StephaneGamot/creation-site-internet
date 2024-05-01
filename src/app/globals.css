@@ -27,13 +27,23 @@ body {
 }
 
 
+
+
 h1 {
   text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+
 }
 
 
 h2 {
   text-align: center;
+  color: white;
+    font-size: 28px;
+    font-weight: 700;
+
 }
 
 
@@ -44,3 +54,18 @@ p {
   color: #d4d4d4;
   margin: 10px auto;
 }
+
+@media (min-width: 640px) { 
+
+h1 {
+  font-size: 40px;
+}
+}
+
+@media (min-width: 1024px) { 
+
+  h1 {
+    font-size: 48px;
+  }
+}
+

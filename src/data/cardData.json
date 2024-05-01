@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "image": "/img/creationEtRefonteSiteWeb.webp",
+      "title": "Création de site internet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+      "tags": ["photography", "travel", "winter"]
+    },
+    {
+      "id": 2,
+      "image": "/img/seo.webp",
+      "title": "SEO ou référencement naturel",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+      "tags": ["photography", "travel", "winter"]
+    },
+    {
+      "id": 3,
+      "image": "/img/refonteSiteWeb.webp",
+      "title": "Refonte de site web",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+      "tags": ["photography", "travel", "winter"]
+    }
+  ]
+  

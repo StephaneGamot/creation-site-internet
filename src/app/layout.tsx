@@ -4,7 +4,7 @@ import "./globals.css";
 import type { Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import Nav from "@/components/header/nav";
+import Header from "@/components/header/header";
 
 export const viewport: Viewport = {
 	width: "device-width",
@@ -74,7 +74,7 @@ export default function RootLayout({
 	return (
 		<html lang="fr">
 			<body className={inter.className}>
-        <Nav />
+				<Header />
 				{children}
 				<SpeedInsights />
 				<Analytics />
