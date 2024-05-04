@@ -29,7 +29,7 @@ import Java from "@/components/icons/java";
 import Jest from "@/components/icons/jest";
 import JavaScript from "@/components/icons/javaScript";
 import MySql from "@/components/icons/mySql";
-import Next from "@/components/icons/next";
+import Next from "@/components/icons/nextIcon";
 import ReactIcon from "@/components/icons/react";
 import RestApi from "@/components/icons/restApi";
 import Spring from "@/components/icons/spring";

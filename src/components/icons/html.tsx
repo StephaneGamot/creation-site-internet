@@ -1,6 +1,6 @@
-import HtmlIcon from "../../../public/icons/html.svg";
+import { FaHtml5 } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Html() {
-	return <Image src={HtmlIcon} alt="Icon rouge du Html5" width={40} height={48} title="Html" />;
+	return <FaHtml5 className=' text-cyan-500 text-[40px]' />
 }
