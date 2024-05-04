@@ -106,7 +106,7 @@ export default function Nav() {
 						<Link href="/stephane-gamot/portfolio" className={`${Style.navItem} ${Style.portfolio}`}>
 							Portfolio
 						</Link>
-						<Link href="/contact" className={Style.navItem}>
+						<Link href="/#contact" className={Style.navItem}>
 							Contact
 						</Link>
 						<Languages />

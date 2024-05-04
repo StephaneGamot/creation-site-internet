@@ -5,6 +5,7 @@ import type { Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header/header";
+import Footer from "@/components/footer";
 
 export const viewport: Viewport = {
 	width: "device-width",
@@ -76,6 +77,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<Header />
 				{children}
+				<Footer />
 				<SpeedInsights />
 				<Analytics />
 			</body>

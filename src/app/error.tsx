@@ -4,6 +4,6 @@
 
 export default function Error() {
   return (
-    <div>E</div>
+    <div className='text-center'>ERROR </div>
   )
 }

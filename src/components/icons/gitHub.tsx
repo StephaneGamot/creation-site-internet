@@ -10,7 +10,7 @@ export default function GitHub({ href }: GitHubProps) {
 	return (
         <div className="h-10 my-auto">
 		<Link href={href} passHref>
-			<Image src={GitHubIcon} alt="Lien vers mon GitHub" width={40} height={48} title="GitHub" className="mx-7 " />
+			<Image src={GitHubIcon} alt="Lien vers mon GitHub" width={40} height={48} title="GitHub" className="" />
 		</Link>
         </div>
 	);

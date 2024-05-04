@@ -12,6 +12,8 @@
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "next": "14.2.2",
+    "next-nprogress-bar": "^2.3.11",
+    "nextjs-toploader": "^1.6.12",
     "react": "^18",
     "react-dom": "^18"
   },
