@@ -34,7 +34,7 @@ export default function Page() {
 				<h2>Mes compétences</h2>
 				<div className="flex-col max-w-[750px] mx-auto gap-7 sm:flex sm:flex-row ">
 					<div>
-						<div className="flex sm:w-[350px] mx-auto my-4">
+						<div className="flex w-[350px] mx-auto my-4">
 							<FaHtml5 className=" text-red-500 text-[40px]" />
 							<ProgressBar color="bg-red-500" percentage={100} />
 						</div>
