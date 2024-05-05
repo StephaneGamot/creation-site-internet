@@ -32,7 +32,7 @@ export default function Page() {
 
 			<div className="p-10">
 				<h2>Mes compétences</h2>
-				<div className="   gap-7 sm:flex sm:flex-row max-w-[750px] mx-auto">
+				<div className="flex-col max-w-[750px] mx-auto gap-7 sm:flex sm:flex-row ">
 					<div>
 						<div className="flex  max-w-[350px] mx-auto my-4">
 							<FaHtml5 className=" text-red-500 text-[40px]" />
