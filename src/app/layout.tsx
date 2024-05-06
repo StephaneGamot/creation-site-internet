@@ -64,8 +64,7 @@ export const metadata: Metadata = {
 			"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
 	},
 	verification: {
-		google: "google1b18195b39af5559",
-		yandex: "",
+		google: "j8qoU_tCtrTwhMQJ0ort9qNHsdtEkToBWq_w340ggW0"
 	},
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev",
