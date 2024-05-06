@@ -8,10 +8,10 @@ export default function LastProjects() {
  <section className='bg-black p-8'>
 <h2>Dernières créations</h2>
 
-<div className='flex justify-evenly gap-5'>
-<Image src={Project2} alt='' width={350}  height={291}/>
-<Image src={Project1} alt='' width={350}  height={291}/>
-<Image src={Project4} alt='' width={350}  height={291}/>
+<div className='flex-col  lg:flex lg:flex-row lg:justify-evenly gap-5 mt-5'>
+<Image src={Project2} alt='Site internet de karaté' width={350}  height={291} className='mx-auto my-5 ' />
+<Image src={Project1} alt='Site web de massage' width={350}  height={291} className='mx-auto my-5' />
+<Image src={Project4} alt='E-commerce de photographe' width={350}  height={291} className='mx-auto my-5' />
 </div>
  </section>
   )

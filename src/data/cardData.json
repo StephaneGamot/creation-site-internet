@@ -3,22 +3,25 @@
       "id": 1,
       "image": "/img/creationEtRefonteSiteWeb.webp",
       "title": "Création de site internet",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-      "tags": ["photography", "travel", "winter"]
+      "description": "Vous lancez votre entreprise ou un événement ? Je crée des sites web sur mesure, élégants et réactifs, optimisés pour tous les appareils, assurant une expérience utilisateur fluide et une présence en ligne dynamique.",
+      "tags": ["#CreationSiteWeb", "#SiteResponsive"],
+      "href": "/web"
     },
     {
       "id": 2,
       "image": "/img/seo.webp",
       "title": "SEO ou référencement naturel",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-      "tags": ["photography", "travel", "winter"]
+      "description": "Boostez votre visibilité en ligne avec des stratégies de SEO ciblées. J'optimise votre site internet pour améliorer votre positionnement dans les résultats de recherche, attirant ainsi un trafic plus qualifié et durable.",
+      "tags": ["#SEO", "#ReferencementNaturel"],
+      "href": "/seo-referencement-naturel"
     },
     {
       "id": 3,
       "image": "/img/refonteSiteWeb.webp",
       "title": "Refonte de site web",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-      "tags": ["photography", "travel", "winter"]
+      "description": "Modernisez votre site avec une refonte technologique complète. J'améliore l'expérience utilisateur, la performance technique et le SEO pour transformer votre plateforme en un outil puissant de votre stratégie digitale.",
+      "tags": ["#RefonteSiteWeb", "#ModernisationWeb"],
+      "href": "/#refonte"
     }
   ]
   

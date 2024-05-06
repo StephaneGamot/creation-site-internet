@@ -21,12 +21,12 @@ import Image from "next/image";
 
 export default function TechnologyIUse() {
 	return (
-		<section className="flex flex-col bg-slate-200    ">
-			<h2>Les technologies utilisées</h2>
-			<div className="flex justify-center">
+		<section className="flex flex-col bg-slate-200  pt-5  ">
+			<h2 className="text-black">Les technologies utilisées</h2>
+			<div className="flex-col  mx-auto md:flex md:flex-row justify-center">
 				<div className=" rounded p-4 w-96">
 					<h3 className='absolute text-black font-semibold'>Front-End</h3>
-					<div className='flex flex-col items-center justify-center '>
+					<div className='flex flex-col items-center justify-center mx-auto '>
 						<div className="flex justify-center p-2">
 							<Image src={Html} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 						</div>
@@ -47,7 +47,7 @@ export default function TechnologyIUse() {
 						</div>
 					</div>
 				</div>
-                <div className='p-4  w-96'>
+                <div className='p-4 mx-auto w-96'>
                 <h3 className='absolute text-black font-semibold'>CMS</h3>
                 <div className=" flex justify-center p-2">
 					

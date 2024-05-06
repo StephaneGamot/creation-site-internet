@@ -68,7 +68,7 @@ export default function Nav() {
 											</Link>
 										</li>
 										<li>
-											<Link href="/refonte-site-web" className={Style.dropdownItem}>
+											<Link href="/web#refonte" className={Style.dropdownItem}>
 												Refonte de site web
 											</Link>
 										</li>

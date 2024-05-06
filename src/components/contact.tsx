@@ -11,10 +11,12 @@ export default function Contact() {
     className="py-20 px-4 mx-auto max-w-4xl border-solid border-t-2 border-gray-light sm:py-24 md:py-28 lg:py-32"
   >
     <p
-      className="font-lora text-3xl max-w-lg mx-auto text-center font-medium leading-snug text-main mb-14 sm:mb-20 sm:text-4xl sm:leading-snug sm:max-w-xl md:text-5xl md:leading-snug md:max-w-3xl"
+      className=" text-3xl max-w-lg mx-auto text-center mb-2 font-medium sm:mb-4 sm:text-4xl sm:leading-snug sm:max-w-xl md:text-5xl md:leading-snug md:max-w-3xl"
     >
       Faites-moi savoir si vous êtes intéressés par une
-      <strong className="italic"> potentielle collaboration</strong>. Je suis
+      <strong className="italic"> potentielle collaboration</strong>.</p> <p
+      className=" text-3xl max-w-lg mx-auto text-center font-medium mb-14 sm:mb-20 sm:text-4xl sm:leading-snug sm:max-w-xl md:text-5xl md:leading-snug md:max-w-3xl"
+    > Je suis
       disponible pour du travail en Freelance.
     </p>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 import type { Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -16,6 +17,7 @@ export const viewport: Viewport = {
 };
 
 const inter = Inter({ subsets: ["latin"] });
+const garamond = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.creation-site-internet.dev"),
@@ -74,7 +76,7 @@ export default function RootLayout({
 }>) { 
 	return (
 		<html lang="fr">
-			<body className={inter.className}>
+			<body className={garamond.className}>
 				<Header />
 				{children}
 				<Footer />
