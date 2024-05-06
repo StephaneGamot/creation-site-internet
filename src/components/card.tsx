@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CardInterface } from "../interfaces/cardInterfaces";
 
-export default function Card({ image, title, description, tags, href }: CardInterface) {
+export default function Card({ image, title, description, tags, href, alt }: CardInterface) {
 	if (!href) {
 		console.error("Href is undefined for title:", title);
 	}

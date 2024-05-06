@@ -52,7 +52,7 @@ export default function Nav() {
 						</Link>
 						<ul>
 							<li className={Style.relative} onMouseEnter={() => handleMouseEnter("services")} onMouseLeave={handleMouseLeave}>
-								<Link href="/nos-services" className={Style.navItem} onClick={handleClick}>
+								<Link href="/web" className={Style.navItem} onClick={(e) => e.preventDefault()}>
 									Services
 								</Link>
 								<div className={`${Style.dropdownMenu} ${activeMenu === "services" ? Style.show : ""}`}>
@@ -79,7 +79,7 @@ export default function Nav() {
 
 						<ul>
 							<li className={Style.relative} onMouseEnter={() => handleMouseEnter("about")} onMouseLeave={handleMouseLeave}>
-								<Link href="/a-propos" className={Style.navItem} onClick={handleClick}>
+								<Link href="/stephane-gamot" className={Style.navItem} onClick={(e) => e.preventDefault()} >
 									A propos
 								</Link>
 								<div className={`${Style.dropdownMenu} ${activeMenu === "about" ? Style.show : ""}`}>

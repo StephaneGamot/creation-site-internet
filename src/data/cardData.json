@@ -5,7 +5,8 @@
       "title": "Création de site internet",
       "description": "Vous lancez votre entreprise ou un événement ? Je crée des sites web sur mesure, élégants et réactifs, optimisés pour tous les appareils, assurant une expérience utilisateur fluide et une présence en ligne dynamique.",
       "tags": ["#CreationSiteWeb", "#SiteResponsive"],
-      "href": "/web"
+      "href": "/web",
+      "alt":"Créer un site web"
     },
     {
       "id": 2,
@@ -13,7 +14,8 @@
       "title": "SEO ou référencement naturel",
       "description": "Boostez votre visibilité en ligne avec des stratégies de SEO ciblées. J'optimise votre site internet pour améliorer votre positionnement dans les résultats de recherche, attirant ainsi un trafic plus qualifié et durable.",
       "tags": ["#SEO", "#ReferencementNaturel"],
-      "href": "/seo-referencement-naturel"
+      "href": "/seo-referencement-naturel",
+      "alt":"Booster sa visibilité sur Google"
     },
     {
       "id": 3,
@@ -21,7 +23,8 @@
       "title": "Refonte de site web",
       "description": "Modernisez votre site avec une refonte technologique complète. J'améliore l'expérience utilisateur, la performance technique et le SEO pour transformer votre plateforme en un outil puissant de votre stratégie digitale.",
       "tags": ["#RefonteSiteWeb", "#ModernisationWeb"],
-      "href": "/#refonte"
+      "href": "/#refonte",
+      "alt":"Pouvoir recréer son site mais autrement"
     }
   ]
   

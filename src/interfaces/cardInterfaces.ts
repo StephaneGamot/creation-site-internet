@@ -4,4 +4,5 @@ export interface CardInterface {
     description: string;
     tags: string[];
     href: string;
+    alt: string;
 }
