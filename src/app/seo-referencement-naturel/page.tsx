@@ -1,4 +1,12 @@
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "",
+	description: "",
+	alternates: {
+		canonical: "https://www.creation-site-internet.dev",
+	},
+};
 
 export default function Page() {
 	return (

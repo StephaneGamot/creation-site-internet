@@ -6,9 +6,7 @@ export default function Header() {
 	return (
 		<div className={Style.customBackground}>
 			<Nav />
-
-			<div className={Style.mainTitle}>
-			</div>
+			<div className={Style.mainTitle}></div>
 		</div>
 	);
 }

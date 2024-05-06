@@ -34,7 +34,6 @@ export default function Skills() {
 				<h2>Mes compétences</h2>
 				<div className="flex-col mt-8 gap-7 md:flex md:flex-row md:justify-around lg:justify-center lg:gap-9">
 					<div>
-						
 						<h2>Front-End</h2>
 						<div className="flex w-[350px] mx-auto my-4">
 							<FaHtml5 className=" text-red-500 text-[40px]" />
@@ -84,14 +83,14 @@ export default function Skills() {
 						</div>
 
 						<div className="flex w-[350px] mx-auto my-4">
-							<Image src={JUnit5} alt="" width={40} height={40} className="" />
+							<Image src={JUnit5} alt="JUnit5" width={40} height={40} className="" />
 							<ProgressBar percentage={60} />
 						</div>
 					</div>
 					<div>
 						<h2>Back-end</h2>
 						<div className="flex w-[350px] mx-auto my-4">
-							<Image src={Java} alt="" width={40} height={40} className=" rounded" />
+							<Image src={Java} alt="Java" width={40} height={40} className=" rounded" />
 							<ProgressBar percentage={60} />
 						</div>
 
@@ -101,16 +100,15 @@ export default function Skills() {
 						</div>
 
 						<div className="flex w-[350px] mx-auto my-4">
-							<Image src={MySql} alt="" width={40} height={40} className="bg-white rounded" />
+							<Image src={MySql} alt="MySQL" width={40} height={40} className="bg-white rounded" />
 							<ProgressBar percentage={60} />
 						</div>
 
 						<div className="flex w-[350px] mx-auto my-4">
-							<Image src={RestApi} alt="" width={40} height={40} className="bg-white rounded" />
+							<Image src={RestApi} alt="Api Rest" width={40} height={40} className="bg-white rounded" />
 							<ProgressBar percentage={90} />
 						</div>
-					
-					
+
 						<h2>CMS</h2>
 						<div className="flex w-[350px] mx-auto my-4">
 							<FaWordpress className=" text-cyan-700 text-[40px]" />
@@ -118,13 +116,13 @@ export default function Skills() {
 						</div>
 
 						<div className="flex w-[350px] mx-auto my-4">
-							<Image src={Joomla} alt="" width={40} height={40} className=" rounded" />
+							<Image src={Joomla} alt="Joomla" width={40} height={40} className=" rounded" />
 							<ProgressBar percentage={80} />
 						</div>
-					
+
 						<h2>Autres</h2>
 						<div className="flex w-[350px] mx-auto my-4">
-							<Image src={Seo} alt="" width={40} height={40} className=" rounded" />
+							<Image src={Seo} alt="Seo" width={40} height={40} className=" rounded" />
 							<ProgressBar percentage={90} />
 						</div>
 
@@ -134,7 +132,7 @@ export default function Skills() {
 						</div>
 
 						<div className="flex w-[350px] mx-auto my-4">
-							<Image src={Figma} alt="" width={40} height={40} className=" rounded" />
+							<Image src={Figma} alt="Figma" width={40} height={40} className=" rounded" />
 							<ProgressBar percentage={60} />
 						</div>
 					</div>

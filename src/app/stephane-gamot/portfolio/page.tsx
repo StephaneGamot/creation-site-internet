@@ -39,6 +39,18 @@ import WordPress from "@/components/icons/wordpress";
 import Junit5 from "@/components/icons/junit5";
 import Web from "@/components/icons/web";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "",
+	description: "",
+	alternates: {
+		canonical: "https://www.creation-site-internet.dev",
+	},
+};
+
+
 export default function Portfolio() {
 	return (
 		<section>

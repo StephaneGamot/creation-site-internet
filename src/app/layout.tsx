@@ -21,24 +21,26 @@ const garamond = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.creation-site-internet.dev"),
-	title: "Massage relaxant Courcelles | Shiatsu & Réflexologie Plantaire",
-	description: "Votre massage relaxant à Courcelles vous permettra de vous détendre pleinement. Venez également essayer une séance de Shiatsu - Reiki - Reflexologie plantaire",
+	title: "Création de Sites Internet sur mesure | Optimisation SEO",
+	description:
+		"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
 	icons: {
 		icon: "/favicon.ico",
 	},
 	openGraph: {
-		title: "La voie du bien-être | Détente et Relaxation",
-		description: "Profitez d’un massage unique à Courcelles. Shiatsu, Reiki, et relaxation profonde vous attendent.",
+		title: "Création de Sites Internet sur mesure | Optimisation SEO",
+		description:
+			"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
 		url: "https://www.creation-site-internet.dev",
-		siteName: "La voie du bien-être",
+		siteName: "Création de sites internet | SEO",
 		locale: "fr_BE",
 		type: "website",
 		images: [
 			{
-				url: "https://lavoiedubienetre.be/img/OpenGraph/OG-image-massage-Courcelles.jpg",
+				url: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
 				width: 1200,
 				height: 627,
-				alt: "La voie du bien-être à Courcelles",
+				alt: "Le créateur de site internet",
 			},
 		],
 	},
@@ -54,11 +56,12 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "La voie du bien-être | Shiatsu Reiki Massage à Courcelles",
+		title: "Création de Sites Internet sur mesure | Optimisation SEO",
 		card: "summary_large_image",
-		images: "https://lavoiedubienetre.be/img/OpenGraph/OG-image-massage-Courcelles.jpg",
-		site: "@voiedubienetre",
-		description: "Centre de massage à Courcelles | Shiatsu Reiki Reflexologie Plantaire | La voie du bien-être",
+		images: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
+		site: "@whitewo26072430",
+		description:
+			"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
 	},
 	verification: {
 		google: "google1b18195b39af5559",
@@ -73,7 +76,7 @@ export default function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
-}>) { 
+}>) {
 	return (
 		<html lang="fr">
 			<body className={garamond.className}>

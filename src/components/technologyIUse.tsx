@@ -31,17 +31,17 @@ export default function TechnologyIUse() {
 							<Image src={Html} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 						</div>
 						<div className="flex justify-center gap-4 p-2 ">
-							<Image src={Css} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-							<Image src={Tailwind} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-							<Image src={Bootstrap} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+							<Image src={Css} alt="CSS" width={50} height={50} title="Css3" placeholder="blur" blurDataURL="data:..." />
+							<Image src={Tailwind} alt="Tailwind" width={50} height={50} title="Css Tail" placeholder="blur" blurDataURL="data:..." />
+							<Image src={Bootstrap} alt="Bootstrap" width={50} height={50} title="BS" placeholder="blur" blurDataURL="data:..." />
 						</div>
 						<div>
 							<div className="flex gap-2 p-2 ">
-								<Image src={JavaScript} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-								<Image src={ReactIcon} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-								<Image src={Next} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-								<Image src={Angular} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-								<Image src={TypeScript} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+								<Image src={JavaScript} alt="JavaScript" width={50} height={50} title="JS" placeholder="blur" blurDataURL="data:..." />
+								<Image src={ReactIcon} alt="React" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+								<Image src={Next} alt="Next" width={50} height={50} title="Next.js" placeholder="blur" blurDataURL="data:..." />
+								<Image src={Angular} alt="Angular" width={50} height={50} title="Ang" placeholder="blur" blurDataURL="data:..." />
+								<Image src={TypeScript} alt="TypeScript" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 								<Image src={Jest} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 							</div>
 						</div>
@@ -52,27 +52,27 @@ export default function TechnologyIUse() {
                 <div className=" flex justify-center p-2">
 					
 					<div className="flex gap-4 justify-center">
-						<Image src={WordPress} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-						<Image src={Joomla} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+						<Image src={WordPress} alt="WordPress" width={50} height={50} title="WP" placeholder="blur" blurDataURL="data:..." />
+						<Image src={Joomla} alt="Joomla" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 					</div>
 				</div>
                 <h3 className='absolute text-black font-semibold'>Back-End</h3>
 				<div className=" flex justify-center p-2">
 
 					<div className="flex justify-center gap-3">
-						<Image src={Java} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-						<Image src={Spring} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-						<Image src={RestApi} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+						<Image src={Java} alt="Java" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+						<Image src={Spring} alt="Spring" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+						<Image src={RestApi} alt="Api Rest" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 					</div>
 				</div>
 				<h3 className='absolute text-black font-semibold'>Autres</h3>
 				<div className="flex justify-center p-2">
                 
 					<div className="flex justify-center gap-2">
-						<Image src={MySql} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-						<Image src={Seo} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-						<Image src={Figma} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-						<Image src={GitHub} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+						<Image src={MySql} alt="MySQL" width={50} height={50} title="Base de données" placeholder="blur" blurDataURL="data:..." />
+						<Image src={Seo} alt="Seo" width={50} height={50} title="référencement naturel" placeholder="blur" blurDataURL="data:..." />
+						<Image src={Figma} alt="Figma" width={50} height={50} title="design" placeholder="blur" blurDataURL="data:..." />
+						<Image src={GitHub} alt="GitHub" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 					</div>
 				</div></div>
 			</div>

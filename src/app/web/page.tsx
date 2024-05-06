@@ -1,4 +1,13 @@
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Vous envisagez de créer un site internet ?",
+	description: "Excellent choix ! Que vous souhaitiez présenter votre entreprise, annoncer un événement important ou lancer une boutique en ligne, je suis là pour y donner vie",
+	alternates: {
+		canonical: "https://www.creation-site-internet.dev/web",
+	},
+};
+
 
 export default function Page() {
 	return (
