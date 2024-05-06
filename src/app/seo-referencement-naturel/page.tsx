@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "",
-	description: "",
+	title: "Vous désirez être vu par vos futurs clients ? | SEO",
+	description: "Un bon référencement naturel (SEO) est essentiel pour garantir à votre site web de se démarquer dans les résultats de Google. Votre présence en ligne en 10 points clés.",
 	alternates: {
-		canonical: "https://www.creation-site-internet.dev",
+		canonical: "https://www.creation-site-internet.dev/seo-referencement-naturel",
 	},
 };
 

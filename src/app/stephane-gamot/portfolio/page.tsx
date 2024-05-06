@@ -43,10 +43,10 @@ import Web from "@/components/icons/web";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "",
-	description: "",
+	title: "Le portfolio de Stéphane Gamot",
+	description: "Le portfolio de Stéphane Gamot en tant que Full-Stack développeur, ses créations, ses idées ...",
 	alternates: {
-		canonical: "https://www.creation-site-internet.dev",
+		canonical: "https://www.creation-site-internet.dev/stephane-gamot/portfolio",
 	},
 };
 
