@@ -10,22 +10,6 @@ const MetadataHomePage = [
 		inLanguage: "fr-FR",
 		datePublished: "2018-01-01T00:00:00+01:00",
 		dateModified: "2023-09-30T11:19:14+01:00",
-		openingHoursSpecification: [
-			{
-				"@type": "OpeningHoursSpecification",
-				dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-				opens: "10:00",
-				closes: "20:00",
-			},
-			{
-				"@type": "OpeningHoursSpecification",
-				dayOfWeek: "Saturday",
-				opens: "10:00",
-				closes: "20:00",
-			},
-		],
-		telephone: "O477131993",
-		email: "stephanegamot@outlook.com",
 
 		sameAs: ["https://www.facebook.com/profile.php?id=100087896780441", "https://twitter.com/whitewo26072430"],
 		image: ["https://www.creation-site-internet.dev/webDevAtWork.jpg"],
