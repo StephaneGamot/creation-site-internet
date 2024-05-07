@@ -6,6 +6,12 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/seo-referencement-naturel",
 	},
+	openGraph: {
+		title: "Vous désirez être vu par vos futurs clients ? | SEO",
+		description:
+			"Un bon référencement naturel (SEO) est essentiel pour garantir à votre site web de se démarquer dans les résultats de Google. Votre présence en ligne en 10 points clés.",
+		url: "https://www.creation-site-internet.dev/seo-referencement-naturel",
+	}
 };
 
 export default function Page() {

@@ -28,7 +28,7 @@ export default function TechnologyIUse() {
 					<h3 className='absolute text-black font-semibold'>Front-End</h3>
 					<div className='flex flex-col items-center justify-center mx-auto '>
 						<div className="flex justify-center p-2">
-							<Image src={Html} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+							<Image src={Html} alt="Html" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 						</div>
 						<div className="flex justify-center gap-4 p-2 ">
 							<Image src={Css} alt="CSS" width={50} height={50} title="Css3" placeholder="blur" blurDataURL="data:..." />
@@ -42,7 +42,7 @@ export default function TechnologyIUse() {
 								<Image src={Next} alt="Next" width={50} height={50} title="Next.js" placeholder="blur" blurDataURL="data:..." />
 								<Image src={Angular} alt="Angular" width={50} height={50} title="Ang" placeholder="blur" blurDataURL="data:..." />
 								<Image src={TypeScript} alt="TypeScript" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
-								<Image src={Jest} alt="" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
+								<Image src={Jest} alt="Jest" width={50} height={50} title="" placeholder="blur" blurDataURL="data:..." />
 							</div>
 						</div>
 					</div>

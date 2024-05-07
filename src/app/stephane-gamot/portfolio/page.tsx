@@ -47,7 +47,12 @@ export const metadata: Metadata = {
 	description: "Le portfolio de Stéphane Gamot en tant que Full-Stack développeur, ses créations, ses idées ...",
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/stephane-gamot/portfolio",
-	},
+	},openGraph: {
+		title: "Le portfolio de Stéphane Gamot",
+		description:
+			"Le portfolio de Stéphane Gamot en tant que Full-Stack développeur, ses créations, ses idées, ses projets, ses réalisations ... On y retrouve principalement du travail de Front-End",
+		url: "https://www.creation-site-internet.dev/stephane-gamot/portfolio",
+	}
 };
 
 

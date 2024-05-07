@@ -6,10 +6,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Stephane Gamot - Full-Stack developpeur",
-	description: "Cette page parle de Stéphane Gamot, ses origines et comment il en venu à être web développeur",
+	description: "Cette page parle de Stéphane Gamot, ses origines et comment il en venu à être web développeur, les évenements qu'il a du traverser pour y arriver",
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/stephane-gamot",
 	},
+	openGraph: {
+		title: "Stephane Gamot - Full-Stack developpeur",
+		description:
+			"Cette page parle de Stéphane Gamot, ses origines et comment il en venu à être web développeur",
+		url: "https://www.creation-site-internet.dev/stephane-gamot",
+	}
 };
 
 export default function Page() {
