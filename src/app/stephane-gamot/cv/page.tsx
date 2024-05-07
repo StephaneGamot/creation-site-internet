@@ -15,6 +15,17 @@ export const metadata: Metadata = {
 		description:
 			"Le CV de Stéphane Gamot en tant que Full-Stack développeur, ses formations, ses diplomes ..., ses hobbies, ses langues, les langages informatique parlés ...",
 		url: "https://www.creation-site-internet.dev/stephane-gamot/cv",
+		siteName: "CV du créateur de sites internet | SEO",
+		locale: "fr_BE",
+		type: "website",
+		images: [
+			{
+				url: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
+				width: 1200,
+				height: 627,
+				alt: "Le créateur de site internet",
+			},
+		],
 	}
 };
 

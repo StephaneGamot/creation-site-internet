@@ -15,7 +15,19 @@ export const metadata: Metadata = {
 		description:
 			"Cette page parle de Stéphane Gamot, ses origines et comment il en venu à être web développeur",
 		url: "https://www.creation-site-internet.dev/stephane-gamot",
+		siteName: "Stéphane Gamot créateur de sites internet | SEO",
+		locale: "fr_BE",
+		type: "website",
+		images: [
+			{
+				url: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
+				width: 1200,
+				height: 627,
+				alt: "Le créateur de site internet",
+			},
+		],
 	}
+	
 };
 
 export default function Page() {

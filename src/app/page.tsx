@@ -8,7 +8,7 @@ import MetadataHomePage from "@/components/metadata/MetadataHomePage";
 
 export const metadata: Metadata = {
 	title: "Vous envisagez la création d’un site internet ?",
-	description: "Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
+	description: "Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google",
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/",
 	},	openGraph: {

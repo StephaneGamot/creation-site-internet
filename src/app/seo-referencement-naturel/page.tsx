@@ -2,15 +2,26 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Vous désirez être vu par vos futurs clients ? | SEO",
-	description: "Un bon référencement naturel (SEO) est essentiel pour garantir à votre site web de se démarquer dans les résultats de Google. Votre présence en ligne en 10 points clés.",
+	description: "Un bon référencement naturel SEO est essentiel à votre site web pour se démarquer dans les résultats de Google. Votre présence en ligne en 10 points clés",
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/seo-referencement-naturel",
 	},
 	openGraph: {
 		title: "Vous désirez être vu par vos futurs clients ? | SEO",
 		description:
-			"Un bon référencement naturel (SEO) est essentiel pour garantir à votre site web de se démarquer dans les résultats de Google. Votre présence en ligne en 10 points clés.",
+			"Un bon référencement naturel SEO est essentiel à votre site web pour se démarquer dans les résultats de Google. Votre présence en ligne en 10 points clés",
 		url: "https://www.creation-site-internet.dev/seo-referencement-naturel",
+		siteName: "SEO référencement naturel ",
+		locale: "fr_BE",
+		type: "website",
+		images: [
+			{
+				url: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
+				width: 1200,
+				height: 627,
+				alt: "Le créateur de site internet",
+			},
+		],
 	}
 };
 

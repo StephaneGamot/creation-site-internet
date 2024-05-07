@@ -44,7 +44,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Le portfolio de Stéphane Gamot",
-	description: "Le portfolio de Stéphane Gamot en tant que Full-Stack développeur, ses créations, ses idées ...",
+	description: "Le portfolio de Stéphane Gamot en tant que Full-Stack développeur, ses créations, ses idées, ses projets, ses réalisations ... On y retrouve du Front-End",
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/stephane-gamot/portfolio",
 	},openGraph: {
@@ -52,6 +52,17 @@ export const metadata: Metadata = {
 		description:
 			"Le portfolio de Stéphane Gamot en tant que Full-Stack développeur, ses créations, ses idées, ses projets, ses réalisations ... On y retrouve principalement du travail de Front-End",
 		url: "https://www.creation-site-internet.dev/stephane-gamot/portfolio",
+		siteName: "Portfolio de création de sites internet | SEO",
+		locale: "fr_BE",
+		type: "website",
+		images: [
+			{
+				url: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
+				width: 1200,
+				height: 627,
+				alt: "Le créateur de site internet",
+			},
+		],
 	}
 };
 

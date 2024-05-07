@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 		description:
 			"Excellent choix ! Que vous souhaitiez présenter votre entreprise, annoncer un événement important ou lancer une boutique en ligne, je suis là pour y donner vie",
 		url: "https://www.creation-site-internet.dev/web",
+		siteName: "Création de sites internet | SEO",
+		locale: "fr_BE",
+		type: "website",
+		images: [
+			{
+				url: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
+				width: 1200,
+				height: 627,
+				alt: "Le créateur de site internet",
+			},
+		],
 	}
 };
 
