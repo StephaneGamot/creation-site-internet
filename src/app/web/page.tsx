@@ -6,6 +6,12 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/web",
 	},
+	openGraph: {
+		title: "Vous envisagez de créer un site internet ?",
+		description:
+			"Excellent choix ! Que vous souhaitiez présenter votre entreprise, annoncer un événement important ou lancer une boutique en ligne, je suis là pour y donner vie",
+		url: "https://www.creation-site-internet.dev/web",
+	}
 };
 
 
