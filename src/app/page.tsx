@@ -16,6 +16,17 @@ export const metadata: Metadata = {
 		description:
 			"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne.",
 		url: "https://www.creation-site-internet.dev/",
+		siteName: "Création de sites internet | SEO",
+		locale: "fr_BE",
+		type: "website",
+		images: [
+			{
+				url: "https://www.creation-site-internet.dev/webDevAtWork.jpg",
+				width: 1200,
+				height: 627,
+				alt: "Le créateur de site internet",
+			},
+		],
 	}
 };
 
