@@ -3,6 +3,7 @@ import Contact from "@/components/contact";
 import CardsGallery from "@/components/CardsGallery";
 import TechnologyIUse from "@/components/technologyIUse";
 import LastProjects from "@/components/lastProjects";
+import TarifContainer from "@/components/tarifs/tarifContainer";
 import type { Metadata } from "next";
 import MetadataHomePage from "@/components/metadata/MetadataHomePage";
 
@@ -39,6 +40,7 @@ export default function Home() {
 			<LastProjects />
 			<TechnologyIUse />
 			<Contact />
+			<TarifContainer />
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(MetadataHomePage) }} />
 		</main>
 	);

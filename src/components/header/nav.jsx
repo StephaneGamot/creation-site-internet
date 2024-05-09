@@ -95,8 +95,8 @@ export default function Nav() {
 											</Link>
 										</li>
 										<li>
-											<Link href="/stephane-gamot/portfolio" className={Style.dropdownItem}>
-												Portfolio
+											<Link href="/#tarifs" className={Style.dropdownItem}>
+												Tarifs
 											</Link>
 										</li>
 									</ul>

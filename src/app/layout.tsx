@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer";
 
+
 export const viewport: Viewport = {
 	width: "device-width",
 	initialScale: 1,
@@ -24,6 +25,10 @@ export const metadata: Metadata = {
 	title: "Création de Sites Internet sur mesure | Optimisation SEO",
 	description:
 		"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
+		authors: {
+			name: "Stéphane Gamot",
+			url: "https://www.creation-site-internet.dev/stephane-gamot"
+		},
 	icons: {
 		icon: "/favicon.ico",
 	},
@@ -64,7 +69,7 @@ export const metadata: Metadata = {
 			"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
 	},
 	verification: {
-		google: "j8qoU_tCtrTwhMQJ0ort9qNHsdtEkToBWq_w340ggW0"
+		google: "j8qoU_tCtrTwhMQJ0ort9qNHsdtEkToBWq_w340ggW0",
 	},
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev",
