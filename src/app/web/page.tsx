@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 export default function Page() {
 	return (
 		<section className="flex-col my-7 max-w-[1280px] mx-auto p-4">
-			<h1>Vous envisagez de créer un site internet ?</h1>
+			<h1>Créer un site internet ?</h1>
 			<p>
 				<strong>Excellent choix !</strong> Que vous souhaitiez présenter votre entreprise, annoncer un événement important ou lancer une <strong>boutique en ligne</strong>, je suis là pour
 				donner vie à vos projets avec une approche personnalisée et attentive.
