@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import HomeIcon from "../../../public/icons/home.svg";
 import Style from "./header.module.css";
-import Languages from "./languages";
+// import Languages from "./languages";
 
 export default function Nav() {
 	const [activeMenu, setActiveMenu] = useState(null);
@@ -109,7 +109,7 @@ export default function Nav() {
 						<Link href="/#contact" className={Style.navItem}>
 							Contact
 						</Link>
-						<Languages />
+						{/*<Languages />*/}
 					</div>
 				</div>
 			</div>
