@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Project1 from "../../public/img/xxx1.webp";
-import Project2 from "../../public/img/xxx2.webp";
-import Project4 from "../../public/img/xxx3.webp";
+import Project1 from "../../public/img/portfolio-site-internet-massage.webp";
+import Project2 from "../../public/img/portfolio-site-internet-karate.webp";
+import Project4 from "../../public/img/portfolio-site-internet-fish-eyes.webp";
 
 export default function LastProjects() {
 	return (
