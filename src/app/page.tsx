@@ -8,12 +8,12 @@ import type { Metadata } from "next";
 import MetadataHomePage from "@/components/metadata/MetadataHomePage";
 
 export const metadata: Metadata = {
-	title: "Vous envisagez la création d’un site internet ?",
-	description: "Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google",
+	title: "Vous envisagez la création d’un site internet avec un SEO optimal ?",
+	description: "Découvrez nos services de création de site internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google",
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/",
 	},	openGraph: {
-		title: "Vous envisagez la création d’un site internet ?",
+		title: "Vous envisagez la création d’un site internet avec un SEO optimal ?",
 		description:
 			"Découvrez nos services de création de sites internet, conçus pour dynamiser votre présence en ligne.",
 		url: "https://www.creation-site-internet.dev/",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<main>
-			<h1>Création de site Internet</h1>
+			<h1>Création de site Internet avec un SEO optimal</h1>
 			<Hero />
 			<CardsGallery />
 			<LastProjects />
