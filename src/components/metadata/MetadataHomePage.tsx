@@ -45,8 +45,6 @@ const MetadataHomePage = [
 	},{
 		"@context": "https://schema.org",
 		"@type": "ImageObject",
-		"author": "Freepik",
-		"contentLocation": "Halle, Belgique",
 		"contentUrl": "/img/creationEtRefonteSiteWeb.webp",
 		"datePublished": "2024-03-22",
 		"description": "3 ecrans, un macBook, un IPad et un Iphone qui nous permete de remarquer que les sites web sont responsives",
@@ -54,8 +52,6 @@ const MetadataHomePage = [
 	},{
 		"@context": "https://schema.org",
 		"@type": "ImageObject",
-		"author": "Freepik",
-		"contentLocation": "Halle, Belgique",
 		"contentUrl": "/img/refonteSiteWeb.webp",
 		"datePublished": "2024-03-21",
 		"description": "Un écran d'ordinateur qui nous montre tout le code du site web",
@@ -63,8 +59,6 @@ const MetadataHomePage = [
 	},{
 		"@context": "https://schema.org",
 		"@type": "ImageObject",
-		"author": "Freepik",
-		"contentLocation": "Halle, Belgique",
 		"contentUrl": "/img/seo.webp",
 		"datePublished": "2024-03-24",
 		"description": "Une loupe au Paradis nous permettant de lire 'SEO'",
@@ -73,8 +67,6 @@ const MetadataHomePage = [
 	{
 		"@context": "https://schema.org",
 		"@type": "ImageObject",
-		"author": "Stéphane Gamot",
-		"contentLocation": "Halle, Belgique",
 		"contentUrl": "/img/portfolio-site-internet-massage.webp",
 		"datePublished": "2024-03-22",
 		"description": "Un écran Imac nous montrant la page index d'un site de massage et détente",
@@ -82,8 +74,6 @@ const MetadataHomePage = [
 	},{
 		"@context": "https://schema.org",
 		"@type": "ImageObject",
-		"author": "Stéphane Gamot",
-		"contentLocation": "Halle, Belgique",
 		"contentUrl": "/img/portfolio-site-internet-karate.webp",
 		"datePublished": "2024-03-21",
 		"description": "Un écran d'ordinateur nous montrant la page principale d'un site de karaté en Belgique",
@@ -91,8 +81,6 @@ const MetadataHomePage = [
 	},{
 		"@context": "https://schema.org",
 		"@type": "ImageObject",
-		"author": "Stéphane Gamot",
-		"contentLocation": "Halle, Belgique",
 		"contentUrl": "/img/portfolio-site-internet-fish-eyes.webp",
 		"datePublished": "2024-03-24",
 		"description": "Un écran de chez Apple nous montrant la premiere page d'un site de photographes et leurs oeuvres les plus connu",
