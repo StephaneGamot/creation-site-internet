@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import WebDevAtWork from "../../public/webDevAtWork.jpg";
-import SolutionsWeb from "../../public/img/solutionsWeb.webp"
+import SolutionsWeb from "../../public/img/webSolutions.webp"
 
 export default function Hero() {
 	return (
@@ -17,7 +17,7 @@ export default function Hero() {
 				<p>Les sites internet que je créé suis entièrement personnalisé et uniques. Je me déplace sur Bruxelles, Halle, Mons, Gand, Liège et Namur.</p>
 			</div>
 			<div className="flex w-[370px] h-auto justify-center m-auto">
-				<Image src={SolutionsWeb} alt="Web-develppeur au travail derriere son écran" width={370} height={347}  className="w-full" />
+				<Image src={SolutionsWeb} alt="Web-develppeur au travail derriere son écran" width={370} height={350}  className="w-full" />
 			</div>
 		</section>
 	);
