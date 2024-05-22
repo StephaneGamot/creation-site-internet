@@ -43,8 +43,8 @@ export default function Page() {
 					<strong>respectant les standards du web</strong>.
 				</li>
 				<li>
-					<strong>&#10052; Design adaptable à tous les appareils</strong> : Il est crucial que votre site offre une expérience utilisateur impeccable sur tous les appareils. Je conçois donc
-					des interfaces qui s&apos;adaptent harmonieusement aux smartphones, tablettes et ordinateurs de bureau, assurant ainsi une accessibilité et une facilité d’utilisation maximales.
+					<strong>&#10052; Design adaptable à tous les appareils (site responsive)</strong> : Il est crucial que votre site offre une expérience utilisateur impeccable sur tous les appareils. Je conçois donc
+					des interfaces qui s&apos;adaptent harmonieusement aux smartphones, tablettes et ordinateurs de bureau, assurant ainsi une accessibilité et une facilité d’utilisation maximales. 
 				</li>
 				<li>
 					<strong>&#10052; Dynamisme et interactivité des pages</strong> : Un site web se doit d&apos;être vivant et interactif. Je m&apos;engage à créer des pages qui non seulement
