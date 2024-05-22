@@ -10,7 +10,7 @@ export default function Card({ image, title, description, tags, href, alt }: Car
 	return (
 		<Link href={href || "#"}>
 			<div className="max-w-sm rounded overflow-hidden shadow-lg m-8">
-				<Image className="w-full" src={image} alt={title} width={400} height={400} layout="responsive" />
+				<Image className="w-full" src={image} alt={title} width={400} height={400} sizes="(max-width: 400px) 100vw, 400px" />
 				<div className="px-6 py-4">
 					<div className="font-bold text-xl mb-2 text-black text-center">{title}</div>
 					<p className="text-gray-700 text-base font-medium">{description}</p>
