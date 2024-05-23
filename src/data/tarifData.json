@@ -16,7 +16,7 @@
 			"Suivi des performances",
 			"Nom de domaine et hébergement pendant 12 mois",
 			"Mise en place du contenu (textes et images)",
-			"Mise en ligne du site"
+			"Mise en ligne du site internet"
 		],
 		"avantage": [
             "Bpn rapport qualité / prix pour les petits budgets", 
@@ -33,16 +33,16 @@
 			"Sélection et personnalisation d’un thème premium",
 			"Interface administrateur standard",
 			"Sélection d'une palette de couleurs",
-			"Choix de plugins à installer",
+			"Choix de plugins 'Wordpress' à installer",
 			"Formulaire de contact",
 			"Google Map",
 			"Liens de partage sur les réseaux sociaux",
-			"Formation de 4 heures pour l'utilisation du site",
+			"Formation de 4 heures pour l'utilisation du site web",
 			"Optimisation pour le SEO",
             "Blog",
 			"Mise en conformité RGPD",
 			"Optimisation des performances",
-			"Sécurisation du site",
+			"Sécurisation du site internet",
 			"Suivi des performances",
 			"Nom de domaine et hébergement pendant 12 mois",
 			"Mise en place du contenu (textes et images)",
@@ -72,11 +72,11 @@
             "Blog",
 			"Mise en conformité RGPD",
 			"Optimisation des performances",
-			"Sécurisation du site",
+			"Sécurisation du site  numérique",
 			"Suivi des performances",
 			"Nom de domaine et hébergement pendant 12 mois",
 			"Mise en place du contenu (textes et images)",
-			"Mise en ligne du site"
+			"Mise en ligne du site digital"
 		],
 		"avantage": [
             "Solution entièrement adaptée au E-commerce", 
@@ -88,10 +88,10 @@
 		"title": "Site vitrine personnalisé",
 		"price": 3600,
 		"developement": [
-			"Développement d'un site simple avec React et Next.js",
+			"Développement d'un site web avec React et Next.js",
 			"Design réactif (responsive design)",
 			"Design entièrement personnalisé",
-			"SEO optimisé avec Next.js",
+			"SEO optimisé pour Google avec Next.js",
 			"Hébergement sur un service de Vercel",
 			"Mise en conformité RGPD",
 			"Performances optimisé",
@@ -101,7 +101,7 @@
 			"Nom de domaine et hébergement pendant 12 mois",
 			"Mise en place du contenu (textes et images)",
 			"Mise en ligne du site",
-			"Sauvegarde du site"
+			"Sauvegarde du site internet"
 		],
 		"avantage": [
             "Excellente performance et vitesse de chargement", 
@@ -113,14 +113,14 @@
 		"title": "Site Internet Professionnel",
 		"price": 4900,
 		"developement": [
-			"Développement d'un site simple avec React et Next.js",
+			"Développement d'un site web avec React et Next.js",
 			"Design réactif (responsive design)",
 			"Design entièrement personnalisé",
-			"SEO optimisé avec Next.js",
+			"SEO optimisé pour Google & Bing avec Next.js",
 			"Hébergement sur un service de Vercel",
 			"Mise en conformité RGPD",
 			"Performances optimisé",
-			"Sécurisation du site",
+			"Sécurisation du site numérique",
 			"Suivi des performances",
 			"Liens de partage sur les réseaux sociaux",
 			"Nom de domaine et hébergement pendant 12 mois",
@@ -136,7 +136,7 @@
 			"Flexibilité dans le développement et évolutivité",
 			"Capable de gérer des volumes élevés de trafic et d'interactions",
 			"Excellente performance et vitesse de chargement",
-			"SEO amélioré grâce au rendu côté serveur",
+			"SEO amélioré pour Google grâce au rendu côté serveur",
             "Images au format Webp et compressées"
 		]
 	},
@@ -145,10 +145,10 @@
 		"title": "Site Internet Entreprise",
 		"price": 9900,
 		"developement": [
-			"Développement d'un site simple avec React et Next.js",
+			"Développement d'un site web avec React et Next.js",
 			"Design réactif (responsive design)",
 			"Design entièrement personnalisé",
-			"SEO optimisé avec Next.js",
+			"SEO optimisé pour Google avec Next.js",
 			"Hébergement sur un service de Vercel",
 			"Mise en conformité RGPD",
 			"Performances optimisé",
