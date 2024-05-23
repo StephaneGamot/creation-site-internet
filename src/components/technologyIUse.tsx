@@ -25,9 +25,9 @@ export default function TechnologyIUse() {
 			<h2 className="text-black mb-4">Les technologies web utilisées</h2>
 			<div className=' mx-auto flex flex-row flex-wrap justify-center gap-3'>
 		
-							<Image src={Html} alt="Html est le langage de base pour la conception de site web" width={50} height={50} title="HTML" placeholder="blur" blurDataURL="data:..." className="w-[50px] h-[50px]" />
+							<Image src={Html} alt="Html est le langage de base pour la conception de plateforme web" width={50} height={50} title="HTML" placeholder="blur" blurDataURL="data:..." className="w-[50px] h-[50px]" />
 	
-							<Image src={Css} alt="CSS est le langage qui va permettre a votre site de prendre forme" width={50} height={50} title="Css3" placeholder="blur" blurDataURL="data:..." className="w-[50px] h-[50px]" />
+							<Image src={Css} alt="CSS est le langage qui va permettre a votre page de prendre forme" width={50} height={50} title="Css3" placeholder="blur" blurDataURL="data:..." className="w-[50px] h-[50px]" />
 							<Image src={Tailwind} alt="Tailwind est un Css qui facilite la vie des développeur web" width={50} height={50} title="Css Tailwind" placeholder="blur" blurDataURL="data:..." className="w-[50px] h-[50px]" />
 							<Image src={Bootstrap} alt="Bootstrap est un autre Css qui aide les intégrateurs web" width={50} height={50} title="BS" placeholder="blur" blurDataURL="data:..." className="w-[50px] h-[50px]" />
 

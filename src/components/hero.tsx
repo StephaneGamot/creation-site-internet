@@ -17,7 +17,7 @@ export default function Hero() {
 				<p>Le site internet que je crée pour vous est entièrement personnalisé, responsive et unique. Je me déplace sur Bruxelles, Halle, Mons, Gand, Liège et Namur.</p>
 			</div>
 			<div className="flex w-[370px] h-auto justify-center m-auto">
-				<Image src={SolutionsWeb} alt="Web-develppeur au travail derriere son écran" width={370} height={350}  className="w-full" />
+				<Image src={SolutionsWeb} alt="Vous avez une idée nous avons une solution web" width={370} height={350} title="web solution" className="w-full" />
 			</div>
 		</section>
 	);
