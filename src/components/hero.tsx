@@ -13,7 +13,7 @@ export default function Hero() {
 				<p>
 					<strong>Web développeur Full-Stack orienté Front-end =&gt; React – Next.js.</strong>
 				</p>
-				<p>En tant que développeur web diplômé & expérimenté, je mets à votre service mes compétences pour concrétiser vos projets internet.</p>
+				<p>En tant que développeur web diplômé & expérimenté, je mets à votre service mes compétences afin de concrétiser vos projets internet.</p>
 				<p>Le site internet que je crée pour vous est entièrement personnalisé, responsive et unique. Je me déplace sur Bruxelles, Halle, Mons, Gand, Liège et Namur.</p>
 			</div>
 			<div className="flex w-[370px] h-auto justify-center m-auto">

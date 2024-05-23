@@ -27,7 +27,7 @@ export default function Me() {
 				nombreux petits sites pour toutes personnes qui me le demandais.
 			</p>
 			<p>
-				Un jour un chocolatier de Bruxelles me sollicite pour concevoir un site web avec de nombreuses fonctionnalités différentes pour son activité commerciale. Cependant, à cette époque il
+				Un jour un chocolatier de Bruxelles me sollicite afin de concevoir un site web avec de nombreuses fonctionnalités différentes pour son activité commerciale. Cependant, à cette époque il
 				n’y avait aucun CMS qui le permettait. Je me sentais limité.
 			</p>
 			<p>
