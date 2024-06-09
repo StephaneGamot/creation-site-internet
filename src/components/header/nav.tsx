@@ -8,38 +8,60 @@ import Style from "./header.module.css";
 // import Languages from "./languages";
 
 export default function Nav() {
-	const [activeMenu, setActiveMenu] = useState(null);
-	const hoverTimer = useRef(null);
-	const [isLinkDisabled, setIsLinkDisabled] = useState(true);
+	const [activeMenu, setActiveMenu] = useState<string | null>(null);
+	const hoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+	const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
 
 	useEffect(() => {
+		const handleResize = () => {
+			setIsSmallScreen(window.innerWidth < 768);
+		};
+
+		window.addEventListener("resize", handleResize);
+		handleResize();
+
 		return () => {
+			window.removeEventListener("resize", handleResize);
 			if (hoverTimer.current) {
 				clearTimeout(hoverTimer.current);
+			}
+			if (closeTimer.current) {
+				clearTimeout(closeTimer.current);
 			}
 		};
 	}, []);
 
-	const handleClick = (e) => {
-		if (isLinkDisabled) {
-			e.preventDefault();
-		}
-	};
-
-	const handleMouseEnter = (menu) => {
+	const handleMouseEnter = (menu: string) => {
 		if (hoverTimer.current) {
 			clearTimeout(hoverTimer.current);
 		}
-		setActiveMenu(menu);
+		if (!isSmallScreen) {
+			setActiveMenu(menu);
+		}
 	};
 
 	const handleMouseLeave = () => {
 		if (hoverTimer.current) {
 			clearTimeout(hoverTimer.current);
 		}
-		hoverTimer.current = setTimeout(() => {
-			setActiveMenu(null);
-		}, 700);
+		if (!isSmallScreen) {
+			hoverTimer.current = setTimeout(() => {
+				setActiveMenu(null);
+			}, 700);
+		}
+	};
+
+	const handleClick = (menu: string) => {
+		if (isSmallScreen) {
+			if (closeTimer.current) {
+				clearTimeout(closeTimer.current);
+			}
+			setActiveMenu(menu);
+			closeTimer.current = setTimeout(() => {
+				setActiveMenu(null);
+			}, 3000);
+		}
 	};
 
 	return (
@@ -51,7 +73,7 @@ export default function Nav() {
 							<Image src={HomeIcon} alt="Home Icon" className={Style.iconHome} />
 						</Link>
 						<ul>
-							<li className={Style.relative} onMouseEnter={() => handleMouseEnter("services")} onMouseLeave={handleMouseLeave}>
+							<li className={Style.relative} onMouseEnter={() => handleMouseEnter("services")} onMouseLeave={handleMouseLeave} onClick={() => handleClick("services")}>
 								<Link href="/web" className={Style.navItem} onClick={(e) => e.preventDefault()}>
 									Services
 								</Link>
@@ -78,8 +100,8 @@ export default function Nav() {
 						</ul>
 
 						<ul>
-							<li className={Style.relative} onMouseEnter={() => handleMouseEnter("about")} onMouseLeave={handleMouseLeave}>
-								<Link href="/stephane-gamot" className={Style.navItem} onClick={(e) => e.preventDefault()} >
+							<li className={Style.relative} onMouseEnter={() => handleMouseEnter("services")} onMouseLeave={handleMouseLeave} onClick={() => handleClick("services")}>
+								<Link href="/stephane-gamot" className={Style.navItem} onClick={(e) => e.preventDefault()}>
 									A propos
 								</Link>
 								<div className={`${Style.dropdownMenu} ${activeMenu === "about" ? Style.show : ""}`}>
