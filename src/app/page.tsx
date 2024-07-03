@@ -6,9 +6,10 @@ import LastProjects from "@/components/lastProjects";
 import TarifContainer from "@/components/tarifs/tarifContainer";
 import type { Metadata } from "next";
 import MetadataHomePage from "@/components/metadata/MetadataHomePage";
+import TarifDaily from "@/components/tarifs/tarifDaily"
 
 export const metadata: Metadata = {
-	title: "Vous envisagez la création d’un site internet avec un SEO optimal ?",
+	title: "Vous envisagez la création d’un site internet & SEO optimal ?",
 	description: "Découvrez nos services de création de site internet, conçus pour dynamiser votre présence en ligne. Expertise en SEO pour améliorer votre visibilité sur Google",
 	alternates: {
 		canonical: "https://www.creation-site-internet.dev/",
@@ -39,8 +40,9 @@ export default function Home() {
 			<CardsGallery />
 			<LastProjects />
 			<TechnologyIUse />
-			<Contact />
+			
 			<TarifContainer />
+			<TarifDaily />
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(MetadataHomePage) }} />
 		</main>
 	);
