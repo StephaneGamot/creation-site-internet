@@ -11,7 +11,7 @@ export default function Footer() {
 				Intéressé ? Je suis à votre disposition pour une
 				<strong className="italic"> collaboration</strong>.
 			</p>
-			<div className="text-main flex mt-0 justify-center items-center flex-col md:flex-row md:justify-center gap-4">
+			<div id="contact"  className="text-main flex mt-0 justify-center items-center flex-col md:flex-row md:justify-center gap-4">
 			<div className="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
 						<path
