@@ -122,7 +122,7 @@ export default function Portfolio() {
 								<Tailwind />
 							</div>
 							<div>
-								<Web href="https://lavoiedubienetre.be/" />
+								<Web href="" />
 							</div>
 						</div>
 					</div>
