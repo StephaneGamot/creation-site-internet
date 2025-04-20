@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "body": "Stéphane a su écouter mes besoins et les transformer en un site qui me ressemble. C’est rassurant de confier son image à quelqu’un de si humain et compétent.",
+    "alt": "visage rassuré et souriant de Claire Dubois",
+    "author": {
+      "name": "Claire Dubois",
+      "imageUrl": "/images/testimonialPhotos/1.webp"
+    }
+  },
+  {
+    "id": 2,
+    "body": "Grâce à son accompagnement, mon site a enfin une vraie présence sur Google. Et surtout, j’ai compris ce que je faisais et pourquoi. Un grand merci.",
+    "alt": "client heureux du référencement de Julien Mallet",
+    "author": {
+      "name": "Julien Mallet",
+      "imageUrl": "/images/testimonialPhotos/2.webp"
+    }
+  },
+  {
+    "id": 3,
+    "body": "Du design à l’ergonomie, tout est fluide. Mes clients me disent souvent à quel point mon site est clair et agréable. C’est exactement ce que je voulais.",
+    "alt": "utilisatrice satisfaite de la clarté du site de Marion Ternier",
+    "author": {
+      "name": "Marion Ternier",
+           "imageUrl": "/images/testimonialPhotos/3.webp"
+    }
+  },
+  {
+    "id": 4,
+    "body": "Je ne savais pas par où commencer pour créer mon site. Stéphane a tout cadré, tout expliqué avec patience et bienveillance. Résultat : un site pro, visible et simple à gérer.",
+    "alt": "portrait rassuré d’entrepreneur de Loïc Henrot",
+    "author": {
+      "name": "Loïc Henrot",
+            "imageUrl": "/images/testimonialPhotos/4.webp"
+    }
+  },
+  {
+    "id": 5,
+    "body": "C’est bien plus qu’un site, c’est une vitrine qui raconte vraiment mon activité. Merci pour cette justesse, ce souci du détail, et cet accompagnement rassurant.",
+    "alt": "portrait professionnel d’Emilie Marchand, fondatrice",
+    "author": {
+      "name": "Emilie Marchand",
+      "imageUrl": "/images/testimonialPhotos/5.webp"
+    }
+  },
+  {
+    "id": 6,
+    "body": "La stratégie SEO mise en place a eu un effet rapide sur ma visibilité. Je me sens enfin en phase avec mon site et mes clients le ressentent aussi.",
+    "alt": "regard confiant d’Ismaël Fournier après le SEO",
+    "author": {
+      "name": "Ismaël Fournier",
+          "imageUrl": "/images/testimonialPhotos/6.webp"
+    }
+  },
+  {
+    "id": 7,
+    "body": "Stéphane m’a permis de passer d’une idée floue à un projet concret, cohérent et surtout visible. Il a ce don de traduire l’intuition en pixels avec élégance.",
+    "alt": "témoignage inspiré de Céline Lefèvre",
+    "author": {
+      "name": "Céline Lefèvre",
+           "imageUrl": "/images/testimonialPhotos/7.webp"
+    }
+  }
+]
