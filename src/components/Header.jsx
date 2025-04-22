@@ -13,7 +13,7 @@ const navigation = [
     { name: 'Réferencement naturel', href: '/seo-referencement-naturel' },
     { name: 'Portfolio', href: '/stephane-gamot/portfolio' },
     { name: 'Qui suis-je ?', href: '/stephane-gamot' },
-    { name: 'Contact', href: '/' },
+    { name: 'Contact', href: '/contact' },
   ]
 
 export default function Header() {
