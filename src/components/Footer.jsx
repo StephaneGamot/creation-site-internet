@@ -6,13 +6,10 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center justify-center gap-3">
               <h3 className="text-lg font-title font-semibold text-white">
-                Création de site web & référencement naturel
+                Création de site web élégants & stratégie SEO pour valoriser
+                votre présence en ligne.
               </h3>
             </div>
-            <p className="max-w-sm !text-[#C0C5CD]">
-              Création de sites internet élégants & stratégie SEO pour valoriser
-              votre présence en ligne.
-            </p>
           </div>
         </div>
         <div className="mt-6 border-t border-white/10 pt-6 text-center text-xs text-gray-300">
