@@ -8,6 +8,30 @@ import Skills from '@/components/Skills'
 import ContactButton from '@/components/Buttons/ContactButton'
 import Citation from '@/components/Citations/Citation'
 
+export const metadata = {
+  title: "Qui suis-je ? – Stéphane Gamot, ingénieur & développeur web",
+  description: "Développeur full-stack & consultant SEO freelance. Passionné de design web, accessibilité, UX et optimisation technique.",
+  alternates: {
+    canonical: "https://www.creation-site-internet.dev/stephane-gamot",
+  },
+  openGraph: {
+    title: "Stéphane Gamot – Créateur de solutions web & SEO",
+    description: "Mon parcours, mes valeurs, mes compétences. Un accompagnement humain, technique et esthétique pour votre site.",
+    url: "https://www.creation-site-internet.dev/stephane-gamot",
+    type: "profile",
+    siteName: "Création Site Internet",
+    locale: "fr_BE",
+    images: [
+      {
+        url: "/images/og-stephane.webp",
+        width: 1200,
+        height: 627,
+        alt: "Portrait professionnel de Stéphane Gamot",
+      },
+    ],
+  },
+}
+
 export default function QuiSuisJe() {
   const timeline = [
     {

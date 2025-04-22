@@ -1,6 +1,30 @@
 import Image from "next/image";
 import MeContacterButton from "@/components/Buttons/ContactButton";
 
+export const metadata = {
+  title: "Portfolio – Projets web & SEO réalisés par Stéphane Gamot",
+  description: "Découvrez mes créations de sites internet, projets SEO et web apps sur-mesure. Design raffiné, ergonomie fluide et performance assurée.",
+  alternates: {
+    canonical: "https://www.creation-site-internet.dev/stephane-gamot/portfolio",
+  },
+  openGraph: {
+    title: "Portfolio – Réalisations web, SEO & applications",
+    description: "Projets clients : sites vitrines, e-commerce, SEO, UI/UX, et développement personnalisé avec Next.js et Tailwind.",
+    url: "https://www.creation-site-internet.dev/stephane-gamot/portfolio",
+    type: "profile",
+    siteName: "Création Site Internet",
+    locale: "fr_BE",
+    images: [
+      {
+        url: "/images/og-portfolio.webp",
+        width: 1200,
+        height: 627,
+        alt: "Miniatures de projets web et applications mobiles",
+      },
+    ],
+  },
+}
+
 const projects = [
   {
     title: "E-commerce bien-être",
@@ -173,6 +197,7 @@ export default function Portfolio() {
     alt={project.alt}
     width={800}
     height={470}
+    loading="lazy" 
     className="rounded-xl object-cover mb-4 transition-transform duration-300 md:group-hover:scale-[1.01]"
     aria-describedby={`desc-${index}`}
   />

@@ -1,6 +1,31 @@
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
+export const metadata = {
+    title: "Contact – Parlons de votre projet web",
+    description: "Besoin d’un site web, d’un audit SEO ou d’un accompagnement digital ? Je vous réponds rapidement avec écoute et précision.",
+    alternates: {
+      canonical: "https://www.creation-site-internet.dev/contact",
+    },
+    openGraph: {
+      title: "Contact – Créez votre site web avec Stéphane Gamot",
+      description: "Discutons de vos besoins en création de site internet, référencement ou refonte. Je suis à votre écoute.",
+      url: "https://www.creation-site-internet.dev/contact",
+      type: "contact",
+      siteName: "Création Site Internet",
+      locale: "fr_BE",
+      images: [
+        {
+          url: "/images/og-contact.webp",
+          width: 1200,
+          height: 627,
+          alt: "Formulaire de contact digital élégant sur fond sombre",
+        },
+      ],
+    },
+  }
+
+  
 export default function ContactPage() {
   return (
     <div id='contact' className="relative isolate bg-gray-900 text-white font-body">
