@@ -1,4 +1,3 @@
-
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Gallery from "@/components/Gallery/Gallery";
 import HomePageHero from "@/components/Heros/HomePageHero";
@@ -14,8 +13,7 @@ export default function Home() {
       <WhyMe />
       <Gallery />
       <Service />
-
-     <Citation  id={1} />
+      <Citation id={1} />
 
       {/* CTA Final */}
       <section className="text-center my-20">
@@ -30,7 +28,6 @@ export default function Home() {
       </section>
 
       <Testimonials ids={[1, 2, 3, 4, 5, 6, 7]} />
-
     </div>
   );
 }

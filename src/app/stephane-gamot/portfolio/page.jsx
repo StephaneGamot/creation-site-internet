@@ -5,7 +5,7 @@ const projects = [
   {
     title: "E-commerce bien-être",
     category: "E-commerce",
-    image: "/images/PortfolioPhotos/Port6.webp",
+    image: "/images/PortfolioPhotos/port6.webp",
     description: "Une boutique en ligne douce, responsive et optimisée, pour vendre produits et rituels bien-être.",
     alt: "Aperçu d'une boutique bien-être en ligne, au design fluide et naturel."
   },
@@ -26,14 +26,14 @@ const projects = [
   {
     title: "Blog de recettes familiales",
     category: "Blog",
-    image: "/images/PortfolioPhotos/Port5.webp",
+    image: "/images/PortfolioPhotos/port5.webp",
     description: "Un site chaleureux et simple d’utilisation pour partager des recettes accessibles et SEO friendly.",
     alt: "Aperçu d’un blog culinaire avec ambiance familiale et gourmande."
   },
   {
     title: "Site de restaurant bistronomique",
     category: "Restauration",
-    image: "/images/PortfolioPhotos/Port4.webp",
+    image: "/images/PortfolioPhotos/port4.webp",
     description: "Un design immersif et gourmand, avec menu interactif, réservation et ambiance visuelle raffinée.",
     alt: "Site vitrine d’un restaurant bistronomique moderne."
   },
@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Site de finance personnelle",
     category: "Finance",
-    image: "/images/PortfolioPhotos/Port3.webp",
+    image: "/images/PortfolioPhotos/port3.webp",
     description: "Un site sobre et structuré pour accompagner les utilisateurs dans la gestion de leurs finances.",
     alt: "Interface d’un site financier clair et intuitif."
   },
@@ -61,7 +61,7 @@ const projects = [
   {
     title: "Site d'une fédération de karaté",
     category: "Sport",
-    image: "/images/PortfolioPhotos/Port7.webp",
+    image: "/images/PortfolioPhotos/port7.webp",
     description: "Un site dynamique et fédérateur pour présenter les cours, événements et inscriptions en ligne.",
     alt: "Page dédiée à une fédération de karaté avec planning et infos."
   },
