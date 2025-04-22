@@ -7,22 +7,6 @@ export const metadata = {
     alternates: {
       canonical: "https://www.creation-site-internet.dev/contact",
     },
-    openGraph: {
-      title: "Contact – Créez votre site web avec Stéphane Gamot",
-      description: "Discutons de vos besoins en création de site internet, référencement ou refonte. Je suis à votre écoute.",
-      url: "https://www.creation-site-internet.dev/contact",
-      type: "contact",
-      siteName: "Création Site Internet",
-      locale: "fr_BE",
-      images: [
-        {
-          url: "/images/og-contact.webp",
-          width: 1200,
-          height: 627,
-          alt: "Formulaire de contact digital élégant sur fond sombre",
-        },
-      ],
-    },
   }
 
   

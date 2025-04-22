@@ -12,7 +12,7 @@ export default function HomePageHero() {
       transition={{ duration: 0.8 }}
       className="text-4xl md:text-5xl font-title font-semibold mb-8"
     >
-      Création de site internet élégant, fluide, pensé pour le référencement naturel.
+      Création de site internet élégant, <br/>pensé pour le référencement naturel.
     </motion.h1>
     <p className="text-lg md:text-xl text-gray-700 mb-10">
       Je conçois des sites web qui incarnent votre identité, captivent votre audience et optimisent votre visibilité sur Google.
