@@ -80,8 +80,13 @@ export default function QuiSuisJe() {
                 Qui suis-je ?
               </h1>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Je m'appelle Stéphane Gamot. Développeur web passionné, je conçois des sites internet élégants, performants et conçus pour durer.
+                Je m'appelle Stéphane Gamot. 
               </p>
+              <p className="text-gray-700 text-lg leading-relaxed">Ingénieur logiciel & Développeur full-stack web passionné.</p>
+              <p className="text-gray-700 text-lg leading-relaxed">
+              Je conçois des sites internet élégants, performants et conçus pour durer.
+              </p>
+              
               <p className="text-gray-700 text-sm leading-relaxed">
                 Mon approche : allier la technique à la sensibilité graphique, le référencement à l'expérience utilisateur. Chaque projet est une aventure humaine avant tout.
               </p>

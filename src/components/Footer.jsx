@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#3451a1] text-white font-body">
+    <footer className="bg-[#3451a1] font-body">
       <div className="max-w-7xl mx-auto px-6 py-6">
         <div className=" text-sm text-gray-200 text-center">
           <div className="flex flex-col items-center gap-4">
@@ -9,7 +9,7 @@ export default function Footer() {
                 Création de site web & référencement naturel
               </h3>
             </div>
-            <p className="max-w-sm !text-[#b0b5bc]">
+            <p className="max-w-sm !text-[#C0C5CD]">
               Création de sites internet élégants & stratégie SEO pour valoriser
               votre présence en ligne.
             </p>
