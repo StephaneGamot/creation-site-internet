@@ -16,8 +16,16 @@ const openSans = Open_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.creation-site-internet.dev"),
   title: 'Création de site internet - Stéphane Gamot',
   description: 'Site élégant, fluide et SEO-friendly',
+  authors: {
+			name: "Stéphane Gamot",
+			url: "https://www.creation-site-internet.dev/stephane-gamot"
+		},
+	icons: {
+		icon: "/favicon.ico",
+	},
 }
 
 export default function RootLayout({ children }) {
