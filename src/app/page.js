@@ -6,8 +6,7 @@ import WhyMe from "@/components/HomeP/WhyMe";
 import Service from "@/components/HomeP/Service";
 import Citation from "@/components/Citations/Citation";
 import FaqJsonLd from "@/components/Seo/FaqJsonLd";
-import WebsiteJsonLd from "@/components/Seo/WebsiteJsonLd";
-import PersonJsonLd from "@/components/Seo/PersonJsonLd";
+
 
 
 export const metadata = {
@@ -58,8 +57,7 @@ export default function Home() {
 
       <Testimonials ids={[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 16]} />
       <FaqJsonLd />
-  <WebsiteJsonLd />
-  <PersonJsonLd />
+
     </div>
   );
 }

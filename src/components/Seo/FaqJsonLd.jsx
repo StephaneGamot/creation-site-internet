@@ -29,24 +29,7 @@ export default function FaqJsonLd() {
           "@type": "Answer",
           "text": "Absolument. Vous recevez une interface claire, avec ou sans back-office selon vos besoins, et je vous accompagne dans la prise en main."
         }
-      },
-      {
-        "@type": "Question",
-        "name": "Pourquoi investir dans le référencement naturel ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Le SEO permet d’attirer des visiteurs qualifiés sans payer de publicité. Il améliore la visibilité et la crédibilité de votre site dans la durée."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Combien de temps faut-il pour voir les résultats SEO ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Le SEO est un investissement à moyen terme. En général, les premiers résultats apparaissent sous 1 à 3 mois, selon la concurrence."
-        }
       }
-      
     ]
   }
 
