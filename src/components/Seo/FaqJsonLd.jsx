@@ -46,6 +46,7 @@ export default function FaqJsonLd() {
           "text": "Le SEO est un investissement à moyen terme. En général, les premiers résultats apparaissent sous 1 à 3 mois, selon la concurrence."
         }
       }
+      
     ]
   }
 
@@ -53,7 +54,6 @@ export default function FaqJsonLd() {
     <Script
       id="faq-schema"
       type="application/ld+json"
-      strategy="afterInteractive"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
   )
