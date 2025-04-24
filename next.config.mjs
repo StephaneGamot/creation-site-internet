@@ -8,60 +8,57 @@ const securityHeaders = [
   {
     key: "Content-Security-Policy",
     value: `
-        default-src 'self';
-        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://va.vercel-scripts.com;
-        img-src 'self' data: https://www.creation-site-internet.dev/;
-        style-src 'self' 'unsafe-inline';
-        connect-src 'self' https://vitals.vercel-insights.com https://www.google-analytics.com https://va.vercel-scripts.com;
-        font-src 'self';
-        object-src 'none';
-        base-uri 'self';
-        frame-ancestors 'none';
-      `
-      .replace(/\s{2,}/g, " ")
-      .trim(),
+      default-src 'self';
+      script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://va.vercel-scripts.com 'strict-dynamic';
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data: https://www.creation-site-internet.dev;
+      font-src 'self';
+      connect-src 'self' https://vitals.vercel-insights.com https://www.google-analytics.com https://va.vercel-scripts.com;
+      object-src 'none';
+      base-uri 'self';
+      frame-ancestors 'none';
+    `.replace(/\s{2,}/g, " ").trim(),
   },
   {
     key: "X-Content-Type-Options",
-    value: "nosniff", // ✅ Protection contre le content sniffing
+    value: "nosniff",
   },
   {
     key: "X-Frame-Options",
-    value: "DENY", // ✅ Protection contre le clickjacking (iframe)
+    value: "DENY",
   },
   {
     key: "X-XSS-Protection",
-    value: "1; mode=block", // ✅ Protection XSS dans les anciens navigateurs
+    value: "1; mode=block",
   },
   {
     key: "Referrer-Policy",
-    value: "strict-origin-when-cross-origin", // Contrôle ce qui est envoyé comme referrer (recommandé)
+    value: "strict-origin-when-cross-origin",
   },
   {
     key: "Permissions-Policy",
-    value: "geolocation=(), microphone=(), camera=()", // Désactive certaines API navigateur sensibles
+    value: "geolocation=(), microphone=(), camera=()",
   },
   {
     key: "Cross-Origin-Opener-Policy",
-    value: "same-origin", // Protection contre certaines attaques de type cross-origin
+    value: "same-origin",
   },
   {
     key: "Cross-Origin-Embedder-Policy",
-    value: "require-corp", // Nécessaire si tu utilises SharedArrayBuffer
+    value: "require-corp",
   },
   {
     key: "Cross-Origin-Resource-Policy",
-    value: "same-origin", // Restreint les ressources aux mêmes origines
+    value: "same-origin",
   },
 ];
 
-// 2️⃣ ⬇️ Tu ajoutes les headers dans la config
 const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "https://www.creation-site-internet.dev/",
+        hostname: "www.creation-site-internet.dev",
         pathname: "/**",
       },
     ],
@@ -101,7 +98,7 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "http://www.creation-site-internet.dev/",
+            value: "http://www.creation-site-internet.dev",
           },
         ],
         destination: "https://www.creation-site-internet.dev/:1",
@@ -111,5 +108,4 @@ const nextConfig = {
   },
 };
 
-// 3️⃣ ⬇️ Tu exportes ta configuration
 export default nextConfig;
