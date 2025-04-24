@@ -5,6 +5,7 @@ import ContactButton from "@/components/Buttons/ContactButton";
 import WhyMe from "@/components/HomeP/WhyMe";
 import Service from "@/components/HomeP/Service";
 import Citation from "@/components/Citations/Citation";
+import FaqJsonLd from "@/components/Seo/FaqJsonLd"
 
 export const metadata = {
   title: "Création de site internet élégant & SEO – Stéphane Gamot",
@@ -53,6 +54,7 @@ export default function Home() {
       </section>
 
       <Testimonials ids={[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 16]} />
+      <FaqJsonLd />
     </div>
   );
 }

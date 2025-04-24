@@ -2,6 +2,7 @@ import { Cormorant_Garamond, Open_Sans } from "next/font/google";
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
           <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
