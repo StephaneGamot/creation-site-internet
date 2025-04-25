@@ -35,9 +35,9 @@ export default function FaqJsonLd() {
 
   return (
     
-    <Script
-      id="faq-schema"
-      type="application/ld+json"
+    <Script   type="application/ld+json"
+
+    
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
   )
