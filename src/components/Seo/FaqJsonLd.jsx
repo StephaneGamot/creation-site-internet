@@ -1,6 +1,5 @@
 "use client"
 import Script from "next/script"
-import Head from 'next/head';
 
 export default function FaqJsonLd() {
   const jsonLd = {
@@ -35,14 +34,11 @@ export default function FaqJsonLd() {
   }
 
   return (
-    <Head>
-
+    
     <Script
       id="faq-schema"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
-    </Head>
-
   )
 }
