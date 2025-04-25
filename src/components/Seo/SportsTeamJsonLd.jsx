@@ -1,4 +1,3 @@
-// components/Seo/SportsTeamJsonLd.tsx
 "use client";
 
 import Script from "next/script";
@@ -22,7 +21,7 @@ export default function SportsTeamJsonLd() {
 
   return (
     <Script
-      id="sports-team-jsonld"
+      id="sports-team-schema"
       type="application/ld+json"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
