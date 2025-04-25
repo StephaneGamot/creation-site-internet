@@ -34,6 +34,7 @@ export const metadata = {
 
 export default function Home() {
   return (
+    <><FaqJsonLd />
     <div className="px-6 md:px-12  space-y-24 bg-gray-100 text-gray-900 font-body">
       <HomePageHero />
       <WhyMe />
@@ -54,7 +55,7 @@ export default function Home() {
       </section>
 
       <Testimonials ids={[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 16]} />
-      <FaqJsonLd />
-    </div>
+      
+    </div></>
   );
 }
