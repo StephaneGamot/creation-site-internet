@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import "./globals.css";
 import Analytics from "@/components/Analytics";
-import FaqJsonLd from "@/components/Seo/FaqJsonLd";
+
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -37,7 +37,6 @@ export default function RootLayout({ children }) {
           <Header />
         {children}
         <Footer />
-        <FaqJsonLd  />
         <Analytics />
       </body>
     </html>

@@ -1,43 +1,44 @@
-"use client";
-import Script from "next/script";
+"use client"
+import Script from "next/script"
 
 export default function FaqJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
+    "mainEntity": [
       {
         "@type": "Question",
-        name: "Pourquoi créer un site internet sur-mesure ?",
-        acceptedAnswer: {
+        "name": "Pourquoi créer un site internet sur-mesure ?",
+        "acceptedAnswer": {
           "@type": "Answer",
-          text: "Un site sur-mesure est conçu selon vos besoins, votre activité et vos objectifs, ce qui le rend bien plus performant qu’un template générique.",
-        },
+          "text": "Un site sur-mesure est conçu selon vos besoins, votre activité et vos objectifs, ce qui le rend bien plus performant qu’un template générique."
+        }
       },
       {
         "@type": "Question",
-        name: "Le site est-il optimisé pour le SEO ?",
-        acceptedAnswer: {
+        "name": "Le site est-il optimisé pour le SEO ?",
+        "acceptedAnswer": {
           "@type": "Answer",
-          text: "Oui. L’optimisation pour le référencement est intégrée dès la conception : structure, balises, vitesse de chargement, accessibilité, etc.",
-        },
+          "text": "Oui. L’optimisation pour le référencement est intégrée dès la conception : structure, balises, vitesse de chargement, accessibilité, etc."
+        }
       },
       {
         "@type": "Question",
-        name: "Puis-je gérer moi-même mon site une fois livré ?",
-        acceptedAnswer: {
+        "name": "Puis-je gérer moi-même mon site une fois livré ?",
+        "acceptedAnswer": {
           "@type": "Answer",
-          text: "Absolument. Vous recevez une interface claire, avec ou sans back-office selon vos besoins, et je vous accompagne dans la prise en main.",
-        },
-      },
-    ],
-  };
+          "text": "Absolument. Vous recevez une interface claire, avec ou sans back-office selon vos besoins, et je vous accompagne dans la prise en main."
+        }
+      }
+    ]
+  }
 
   return (
-    <Script
-      type="application/ld+json"
+    
+    <Script   type="application/ld+json"
       id="faq-schema"
+    
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
-  );
+  )
 }
