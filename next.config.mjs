@@ -9,7 +9,7 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: `
       default-src 'self';
-      script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://va.vercel-scripts.com 'strict-dynamic';
+      script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://va.vercel-scripts.com;
       style-src 'self' 'unsafe-inline';
       img-src 'self' data: https://www.creation-site-internet.dev;
       font-src 'self';
@@ -18,7 +18,7 @@ const securityHeaders = [
       base-uri 'self';
       frame-ancestors 'none';
     `.replace(/\s{2,}/g, " ").trim(),
-  },
+  },  
   {
     key: "X-Content-Type-Options",
     value: "nosniff",
