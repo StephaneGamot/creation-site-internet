@@ -1,5 +1,4 @@
 
-
 import Image from "next/image";
 import MeContacterButton from "@/components/Buttons/ContactButton";
 import { useTranslations } from "next-intl";

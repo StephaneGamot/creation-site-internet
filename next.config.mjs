@@ -113,7 +113,11 @@ const nextConfig = {
         ],
         destination: "https://www.creation-site-internet.dev/:1",
         permanent: true,
-      },
+      },{
+        source: "/stephane-gamot/portfolio",
+        destination: "/fr/stephane-gamot/portfolio",
+        permanent: true,
+      }
     ];
   },
 };
