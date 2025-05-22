@@ -1,6 +1,11 @@
+"use client"
+
+import { useTranslations } from 'next-intl'
 import React from 'react'
 
 export default function Skills() {
+  const t = useTranslations('skills')
+
     const skills = [
         { name: 'HTML', bg: '#fcd3d3', text: '#b91c1c' },
         { name: 'CSS', bg: '#a5f3fc', text: '#0e7490' },
@@ -27,21 +32,20 @@ export default function Skills() {
       
 
       
-  return (
-    <section className="max-w-5xl mx-auto text-center space-y-8">
-    <h2 className="text-2xl font-title font-semibold">Compétences techniques</h2>
-    <div className="flex flex-wrap justify-center gap-4">
-      {skills.map((skill, i) => (
-        <span
-          key={i}
-          className="px-4 py-2 rounded-full text-sm shadow transition hover:opacity-80"
-          style={{ backgroundColor: skill.bg, color: skill.text }}
-        >
-          {skill.name}
-        </span>
-      ))}
-    </div>
-  </section>
-  
-  )
-}
+      return (
+        <section className="max-w-5xl mx-auto text-center space-y-8">
+          <h2 className="text-2xl font-title font-semibold">{t('title')}</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {skills.map((skill, i) => (
+              <span
+                key={i}
+                className="px-4 py-2 rounded-full text-sm shadow transition hover:opacity-80"
+                style={{ backgroundColor: skill.bg, color: skill.text }}
+              >
+                {skill.name}
+              </span>
+            ))}
+          </div>
+        </section>
+      )
+    }

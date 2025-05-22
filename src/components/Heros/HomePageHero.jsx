@@ -1,9 +1,12 @@
 "use client"
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion'
 import KnowMoreButton from '../Buttons/KnowMoreButton'
 
 export default function HomePageHero() {
+  const t = useTranslations('home');
+
   return (
     <section className="text-center pt-12 max-w-4xl mx-auto mb-12">
     <motion.h1
@@ -12,10 +15,10 @@ export default function HomePageHero() {
       transition={{ duration: 0.8 }}
       className="text-4xl md:text-5xl font-title font-semibold mb-8"
     >
-      Création de site internet élégant, <br/>pensé pour le référencement naturel.
+{t('heroTitle')}
     </motion.h1>
     <p className="text-lg md:text-xl text-gray-700 mb-10">
-      Je conçois des sites web qui incarnent votre identité, captivent votre audience et optimisent votre visibilité sur Google.
+    {t('heroSubtitle')}
     </p>
   <KnowMoreButton />
   </section>

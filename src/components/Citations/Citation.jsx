@@ -1,9 +1,13 @@
-import CitationData from "./CitationData.json";
+"use client"
+
+import { useTranslations } from 'next-intl'
 
 export default function Citation({ id }) {
-  const quote = CitationData.find((item) => item.id === id);
+  const t = useTranslations();
+  const allCitations = t.raw('citations');
+  const quote = allCitations.find((item) => item.id === id);
 
-  if (!quote) return null; 
+  if (!quote) return null;
 
   return (
     <section className="bg-white py-16 px-8 my-16 text-center max-w-4xl mx-auto rounded-3xl shadow-2xl border border-gray-200">
@@ -16,3 +20,4 @@ export default function Citation({ id }) {
     </section>
   );
 }
+

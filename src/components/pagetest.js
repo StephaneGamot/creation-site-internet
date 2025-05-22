@@ -6,7 +6,7 @@ import WhyMe from "@/components/HomeP/WhyMe";
 import Service from "@/components/HomeP/Service";
 import Citation from "@/components/Citations/Citation";
 // import FaqJsonLd from "@/components/Seo/FaqJsonLd";
-import FullJsonLd from "@/components/Seo/FullJsonLd";
+import FullJsonLd from "@/components/Seos/FullJsonLd";
 
 export const metadata = {
   title: "Création de site internet élégant & SEO – Stéphane Gamot",

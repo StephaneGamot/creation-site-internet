@@ -1,3 +1,5 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
 /** @type {import('next').NextConfig} */
 
 const securityHeaders = [
@@ -17,8 +19,8 @@ const securityHeaders = [
       object-src 'none';
       base-uri 'self';
       frame-ancestors 'none';
-    `.replace(/\s{2,}/g, " ").trim(),
-  },  
+    `.replace(/\s{2,}/g, ' ').trim(),
+  },
   {
     key: "X-Content-Type-Options",
     value: "nosniff",
@@ -53,6 +55,14 @@ const securityHeaders = [
   },
 ];
 
+const withNextIntl = createNextIntlPlugin({
+  locales: ['fr', 'en', 'nl'],
+  defaultLocale: 'fr',
+  localePrefix: 'as-needed', 
+  localeDetection: true
+});
+
+// Configuration Next.js enrichie
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -108,4 +118,5 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+// On exporte la config via next-intl
+export default withNextIntl(nextConfig);
