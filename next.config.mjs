@@ -117,6 +117,22 @@ const nextConfig = {
         source: "/stephane-gamot/portfolio",
         destination: "/fr/stephane-gamot/portfolio",
         permanent: true,
+      },{
+        source: "/stephane-gamot",
+        destination: "/fr/stephane-gamot",
+        permanent: true,
+      },{
+        source: "/",
+        destination: "/fr",
+        permanent: true,
+      },{
+        source: "/web",
+        destination: "/fr/web",
+        permanent: true,
+      },{
+        source: "/seo-referencement-naturel",
+        destination: "/fr/seo-referencement-naturel",
+        permanent: true,
       }
     ];
   },
