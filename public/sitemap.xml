@@ -3,58 +3,49 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Page d'accueil -->
+  <!-- /fr -->
   <url>
     <loc>https://www.creation-site-internet.dev/fr</loc>
     <lastmod>2025-05-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl" />
   </url>
 
-  <!-- Page /web -->
-  <url>
-    <loc>https://www.creation-site-internet.dev/fr/web</loc>
-    <lastmod>2025-05-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/web"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/web"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/web"/>
-  </url>
-
-  <!-- Page /contact -->
+  <!-- /fr/contact -->
   <url>
     <loc>https://www.creation-site-internet.dev/fr/contact</loc>
     <lastmod>2025-05-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/contact" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/contact" />
   </url>
 
-  <!-- Page /stephane-gamot -->
+  <!-- /fr/web -->
+  <url>
+    <loc>https://www.creation-site-internet.dev/fr/web</loc>
+    <lastmod>2025-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/web" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/web" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/web" />
+  </url>
+
+  <!-- /fr/stephane-gamot -->
   <url>
     <loc>https://www.creation-site-internet.dev/fr/stephane-gamot</loc>
     <lastmod>2025-05-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/stephane-gamot"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/stephane-gamot"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/stephane-gamot"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/stephane-gamot" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/stephane-gamot" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/stephane-gamot" />
   </url>
 
-  <!-- Page /portfolio -->
+  <!-- /fr/stephane-gamot/portfolio -->
   <url>
     <loc>https://www.creation-site-internet.dev/fr/stephane-gamot/portfolio</loc>
     <lastmod>2025-05-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/stephane-gamot/portfolio"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/stephane-gamot/portfolio"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/stephane-gamot/portfolio"/>
-  </url>
-
-  <!-- Page /seo-referencement-naturel -->
-  <url>
-    <loc>https://www.creation-site-internet.dev/fr/seo-referencement-naturel</loc>
-    <lastmod>2025-05-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/seo-referencement-naturel"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/seo-referencement-naturel"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/seo-referencement-naturel"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creation-site-internet.dev/fr/stephane-gamot/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creation-site-internet.dev/en/stephane-gamot/portfolio" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.creation-site-internet.dev/nl/stephane-gamot/portfolio" />
   </url>
 
 </urlset>
