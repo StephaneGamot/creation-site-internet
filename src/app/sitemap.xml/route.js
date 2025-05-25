@@ -11,16 +11,21 @@ export async function GET() {
   ];
 
   const today = new Date().toISOString();
-
   const urls = [];
 
   for (const path of paths) {
     for (const locale of locales) {
-      const loc = `${baseUrl}/${locale}${path ? '/' + path : ''}`.replace(/\/+$/, '');
+      // ✨ Corrige les slashes redondants et évite le trailing slash
+      const isHome = path === '';
+      const loc = isHome
+        ? `${baseUrl}/${locale}`
+        : `${baseUrl}/${locale}/${path}`.replace(/\/+$/, '');
 
       const alternateLinks = locales
         .map(lang => {
-          const href = `${baseUrl}/${lang}${path ? '/' + path : ''}`.replace(/\/+$/, '');
+          const href = path === ''
+            ? `${baseUrl}/${lang}`
+            : `${baseUrl}/${lang}/${path}`.replace(/\/+$/, '');
           return `<xhtml:link rel="alternate" hreflang="${lang}" href="${href}" />`;
         })
         .join('\n    ');
