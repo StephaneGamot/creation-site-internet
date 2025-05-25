@@ -130,8 +130,8 @@ const nextConfig = {
         destination: "/fr/web",
         permanent: true,
       },{
-        source: "/seo-referencement-naturel",
-        destination: "/fr/seo-referencement-naturel",
+        source: "/contact",
+        destination: "/fr/contact",
         permanent: true,
       }
     ];

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     }[currentLocale],
 
     alternates: {
-      canonical: `${siteUrl}/${currentLocale === "fr" ? "" : `${currentLocale}/`}`,
+      canonical: `${siteUrl}${currentLocale === "fr" ? "" : `/${currentLocale}`}`,
       languages: {
         fr: `${siteUrl}/fr`,
         en: `${siteUrl}/en`,
@@ -49,14 +49,14 @@ export async function generateMetadata({ params }) {
         en: "A website designed around your brand, your audience, and your online visibility. Together, let’s create your ideal digital showcase.",
         nl: "Een site ontworpen voor uw imago, uw doelgroep en uw online vindbaarheid. Laten we samen uw ideale digitale etalage creëren.",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale === "fr" ? "" : currentLocale}`,
-      type: "website",
+      url: `${siteUrl}${currentLocale === "fr" ? "" : `/${currentLocale}`}`,
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
+      type: "website",
       images: [
         {
-          url: `${siteUrl}/webDevAtWork.jpg`,
-          secureUrl: `${siteUrl}/webDevAtWork.jpg`,
+          url: `${siteUrl}/Images/OpenGraph/webDevAtWork.webp`,
+          secureUrl: `${siteUrl}/Images/OpenGraph/webDevAtWork.webp`,
           width: 1200,
           height: 627,
           alt: {
@@ -82,10 +82,11 @@ export async function generateMetadata({ params }) {
         en: "A website designed around your brand, your audience, and your online visibility. Together, let’s create your ideal digital showcase.",
         nl: "Een site ontworpen voor uw imago, uw doelgroep en uw online vindbaarheid. Laten we samen uw ideale digitale etalage creëren.",
       }[currentLocale],
-      images: [`${siteUrl}/webDevAtWork.jpg`],
+      images: [`${siteUrl}/Images/OpenGraph/webDevAtWork.webp`],
     },
   };
 }
+
 
 export default function HomePage() {
   const t = useTranslations("home");
