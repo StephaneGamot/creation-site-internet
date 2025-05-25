@@ -11,9 +11,11 @@ import Citation from "@/components/Citations/Citation";
 import FullJsonLd from "@/components/Seos/FullJsonLd";
 
 export async function generateMetadata({ params }) {
-  const { locale } = await Promise.resolve(params);
+  const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
+
+  const path = slug.length ? `/${slug.join("/")}` : "";
 
   return {
     title: {
@@ -29,12 +31,12 @@ export async function generateMetadata({ params }) {
     }[currentLocale],
 
     alternates: {
-    canonical: `${siteUrl}/${currentLocale}${path ?? ""}`,
+      canonical: `${siteUrl}/${currentLocale}${path}`,
       languages: {
-        fr: `${siteUrl}/fr`,
-        en: `${siteUrl}/en`,
-        nl: `${siteUrl}/nl`,
-        "x-default": `${siteUrl}/fr`,
+        fr: `${siteUrl}/fr${path}`,
+        en: `${siteUrl}/en${path}`,
+        nl: `${siteUrl}/nl${path}`,
+        "x-default": `${siteUrl}/fr${path}`,
       },
     },
 
