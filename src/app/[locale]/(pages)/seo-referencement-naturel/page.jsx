@@ -8,7 +8,7 @@ export async function generateMetadata({ params }) {
   const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
-  const path = slug.length ? `/${slug.join("/")}` : "";
+  const path = '/seo-referencement-naturel';  
 
   return {
     title: {
@@ -21,15 +21,16 @@ export async function generateMetadata({ params }) {
       en: "Custom SEO strategies to improve your site's Google ranking. Audit, content, technical optimization, backlinks, and personalized support.",
       nl: "Maatwerk SEO-strategieën om uw positie op Google te verbeteren. Audit, inhoud, techniek, backlinks en persoonlijke opvolging.",
     }[currentLocale],
-    alternates: {
-      canonical: `${siteUrl}/${currentLocale}${path}`,
+   alternates: {
+      canonical: `${siteUrl}/${currentLocale}${path}`,          // ✅ FR → …/fr/seo-referencement-naturel
       languages: {
         fr: `${siteUrl}/fr${path}`,
         en: `${siteUrl}/en${path}`,
         nl: `${siteUrl}/nl${path}`,
-        "x-default": `${siteUrl}/fr${path}`,
+        'x-default': `${siteUrl}/fr${path}`,
       },
     },
+
     openGraph: {
       title: {
         fr: "Référencement naturel – Visibilité & stratégie SEO",
