@@ -133,6 +133,10 @@ const nextConfig = {
         source: "/contact",
         destination: "/fr/contact",
         permanent: true,
+      },{
+        source: "/seo-referencement-naturel",
+        destination: "/fr/seo-referencement-naturel",
+        permanent: true,
       }
     ];
   },
