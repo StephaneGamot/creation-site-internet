@@ -7,9 +7,10 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export async function generateMetadata({ params }) {
-  const { locale } = await Promise.resolve(params);
+  const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
+  const path = slug.length ? `/${slug.join("/")}` : "";
 
   return {
     title: {
@@ -17,25 +18,20 @@ export async function generateMetadata({ params }) {
       en: "Contact Me – Stéphane Gamot, Freelance Web Developer",
       nl: "Contact opnemen – Stéphane Gamot, freelance webontwikkelaar",
     }[currentLocale],
-
     description: {
       fr: "Besoin d’un site internet, d’un audit SEO ou d’un accompagnement digital ? Échangeons sur votre projet web.",
       en: "Need a website, SEO audit, or digital support? Let’s talk about your web project.",
       nl: "Website nodig, SEO-audit of digitale begeleiding? Laten we uw webproject bespreken.",
     }[currentLocale],
-
     alternates: {
-      canonical: `${siteUrl}/${
-        currentLocale === "fr" ? "contact" : `${currentLocale}/contact`
-      }`,
+      canonical: `${siteUrl}/${currentLocale}${path}`,
       languages: {
-        fr: `${siteUrl}/fr/contact`,
-        en: `${siteUrl}/en/contact`,
-        nl: `${siteUrl}/nl/contact`,
-        "x-default": `${siteUrl}/fr/contact`,
+        fr: `${siteUrl}/fr${path}`,
+        en: `${siteUrl}/en${path}`,
+        nl: `${siteUrl}/nl${path}`,
+        "x-default": `${siteUrl}/fr${path}`,
       },
     },
-
     openGraph: {
       title: {
         fr: "Me contacter – Projet web sur-mesure & accompagnement",
@@ -43,13 +39,11 @@ export async function generateMetadata({ params }) {
         nl: "Contact – Maatwerk webprojecten & begeleiding",
       }[currentLocale],
       description: {
-        fr: "Écrivez-moi pour échanger autour de vos idées, besoins techniques ou projets digitaux. Réponse rapide & personnalisée.",
-        en: "Reach out to discuss your ideas, technical needs, or digital projects. Quick and personalized reply.",
-        nl: "Neem contact op om uw ideeën, technische behoeften of digitale projecten te bespreken. Snelle en persoonlijke reactie.",
+        fr: "Écrivez-moi pour échanger autour de vos idées, besoins techniques ou projets digitaux.",
+        en: "Reach out to discuss your ideas, technical needs, or digital projects.",
+        nl: "Neem contact op om uw ideeën, technische behoeften of digitale projecten te bespreken.",
       }[currentLocale],
-      url: `${siteUrl}/${
-        currentLocale === "fr" ? "contact" : `${currentLocale}/contact`
-      }`,
+      url: `${siteUrl}/${currentLocale}${path}`,
       type: "article",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
@@ -68,7 +62,6 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
-
     twitter: {
       card: "summary_large_image",
       site: "@stephanegamot",
@@ -86,6 +79,7 @@ export async function generateMetadata({ params }) {
     },
   };
 }
+
 
 export default function ContactPage() {
   const t = useTranslations("contact");

@@ -5,9 +5,10 @@ import { useTranslations } from "next-intl";
 import { projects } from "@/data/projectsData";
 
 export async function generateMetadata({ params }) {
-  const { locale } = await Promise.resolve(params);
+  const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
+  const path = slug.length ? `/${slug.join("/")}` : "";
 
   return {
     title: {
@@ -15,23 +16,20 @@ export async function generateMetadata({ params }) {
       en: "Portfolio – Custom Projects & High-Performance Websites",
       nl: "Portfolio – Maatwerkprojecten & performante websites",
     }[currentLocale],
-
     description: {
-      fr: "Découvrez une sélection de sites conçus avec soin : design élégant, performance technique et visibilité SEO réunis.",
-      en: "Explore a curated selection of tailor-made websites blending elegant design, technical performance, and SEO impact.",
-      nl: "Ontdek een selectie op maat gemaakte websites: elegant design, technische prestaties en SEO-impact in één.",
+      fr: "Découvrez une sélection de sites conçus avec soin...",
+      en: "Explore a curated selection of tailor-made websites...",
+      nl: "Ontdek een selectie op maat gemaakte websites...",
     }[currentLocale],
     alternates: {
-      canonical: `${siteUrl}/${currentLocale === "fr" ? "stephane-gamot/portfolio" : `${currentLocale}/stephane-gamot/portfolio`}`,
+      canonical: `${siteUrl}/${currentLocale}${path}`,
       languages: {
-        fr: `${siteUrl}/fr/stephane-gamot/portfolio`,
-        en: `${siteUrl}/en/stephane-gamot/portfolio`,
-        nl: `${siteUrl}/nl/stephane-gamot/portfolio`,
-        "x-default": `${siteUrl}/fr/stephane-gamot/portfolio`,
+        fr: `${siteUrl}/fr${path}`,
+        en: `${siteUrl}/en${path}`,
+        nl: `${siteUrl}/nl${path}`,
+        "x-default": `${siteUrl}/fr${path}`,
       },
     },
-
-
     openGraph: {
       title: {
         fr: "Portfolio – Sites web élégants, performants & durables",
@@ -39,11 +37,11 @@ export async function generateMetadata({ params }) {
         nl: "Portfolio – Elegante, performante & duurzame websites",
       }[currentLocale],
       description: {
-        fr: "Exemples concrets de projets réalisés pour des clients variés. Une approche centrée sur l’efficacité et l’image.",
-        en: "Concrete examples of websites built for a variety of clients. A blend of efficiency and strong brand identity.",
-        nl: "Concrete voorbeelden van websites voor diverse klanten. Een aanpak die efficiëntie en uitstraling combineert.",
+        fr: "Exemples concrets de projets réalisés pour des clients variés.",
+        en: "Concrete examples of websites built for a variety of clients.",
+        nl: "Concrete voorbeelden van websites voor diverse klanten.",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale === "fr" ? "stephane-gamot/portfolio" : `${currentLocale}/stephane-gamot/portfolio`}`,
+      url: `${siteUrl}/${currentLocale}${path}`,
       type: "article",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
@@ -62,7 +60,6 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
-
     twitter: {
       card: "summary_large_image",
       site: "@stephanegamot",

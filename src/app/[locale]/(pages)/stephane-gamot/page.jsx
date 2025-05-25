@@ -7,9 +7,10 @@ import StephaneHero from '@/components/Heros/StephaneHero';
 import { useTranslations } from 'next-intl';
 
 export async function generateMetadata({ params }) {
-  const { locale } = await Promise.resolve(params);
+  const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
+  const path = slug.length ? `/${slug.join("/")}` : "";
 
   return {
     title: {
@@ -17,23 +18,20 @@ export async function generateMetadata({ params }) {
       en: "Who am I? – Stéphane Gamot, software engineer & web developer",
       nl: "Wie ben ik? – Stéphane Gamot, software-ingenieur & webontwikkelaar",
     }[currentLocale],
-
     description: {
-      fr: "Développeur full-stack & consultant SEO passionné. Un parcours solide en ingénierie logicielle, SEO, accessibilité et UX pour concevoir des sites durables et humains.",
-      en: "Full-stack developer & SEO consultant with a strong background in software engineering, SEO, accessibility, and UX design. I build lasting, human-centered websites.",
-      nl: "Full-stack ontwikkelaar & SEO-consultant met een sterke achtergrond in software-engineering, toegankelijkheid en UX. Ik ontwerp duurzame en menselijke websites.",
+      fr: "Développeur full-stack & consultant SEO passionné...",
+      en: "Full-stack developer & SEO consultant with a strong background...",
+      nl: "Full-stack ontwikkelaar & SEO-consultant met een sterke achtergrond...",
     }[currentLocale],
-
     alternates: {
-      canonical: `${siteUrl}/${currentLocale === "fr" ? "stephane-gamot" : `${currentLocale}/stephane-gamot`}`,
+      canonical: `${siteUrl}/${currentLocale}${path}`,
       languages: {
-        fr: `${siteUrl}/fr/stephane-gamot`,
-        en: `${siteUrl}/en/stephane-gamot`,
-        nl: `${siteUrl}/nl/stephane-gamot`,
-        "x-default": `${siteUrl}/fr/stephane-gamot`,
+        fr: `${siteUrl}/fr${path}`,
+        en: `${siteUrl}/en${path}`,
+        nl: `${siteUrl}/nl${path}`,
+        "x-default": `${siteUrl}/fr${path}`,
       },
     },
-
     openGraph: {
       title: {
         fr: "Stéphane Gamot – Créateur de solutions web & SEO",
@@ -41,11 +39,11 @@ export async function generateMetadata({ params }) {
         nl: "Stéphane Gamot – Web- & SEO-oplossingen op maat",
       }[currentLocale],
       description: {
-        fr: "Mon parcours, mes valeurs, mes compétences. Un accompagnement humain, technique et esthétique pour votre site.",
-        en: "My journey, values, and technical skills. A human, technical and aesthetic approach to your website project.",
-        nl: "Mijn parcours, waarden en vaardigheden. Een menselijke, technische en esthetische aanpak voor uw website.",
+        fr: "Mon parcours, mes valeurs, mes compétences...",
+        en: "My journey, values, and technical skills...",
+        nl: "Mijn parcours, waarden en vaardigheden...",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale === "fr" ? "stephane-gamot" : `${currentLocale}/stephane-gamot`}`,
+      url: `${siteUrl}/${currentLocale}${path}`,
       type: "profile",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
@@ -64,7 +62,6 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
-
     twitter: {
       card: "summary_large_image",
       site: "@stephanegamot",
@@ -74,14 +71,15 @@ export async function generateMetadata({ params }) {
         nl: "Wie ben ik? – Stéphane Gamot",
       }[currentLocale],
       description: {
-        fr: "Ingénieur logiciel et développeur web, je conçois des sites pensés pour la performance, l’esthétique et l’humain.",
-        en: "Software engineer and web developer crafting websites focused on performance, design, and human experience.",
-        nl: "Software-ingenieur en webontwikkelaar die sites ontwerpt gericht op prestaties, design en gebruikservaring.",
+        fr: "Ingénieur logiciel et développeur web...",
+        en: "Software engineer and web developer...",
+        nl: "Software-ingenieur en webontwikkelaar...",
       }[currentLocale],
       images: [`${siteUrl}/images/og-stephane.webp`],
     },
   };
 }
+
 
 export default function QuiSuisJe() {
   const t = useTranslations('aboutStephane');

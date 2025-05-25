@@ -4,9 +4,10 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import WebCta from "@/components/cta/WebCta";
 
 export async function generateMetadata({ params }) {
-  const { locale } = await Promise.resolve(params);
+  const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
+  const path = slug.length ? `/${slug.join("/")}` : "";
 
   return {
     title: {
@@ -14,23 +15,20 @@ export async function generateMetadata({ params }) {
       en: "Custom Website Creation – Stéphane Gamot",
       nl: "Maatwerk websites – Stéphane Gamot",
     }[currentLocale],
-
     description: {
-      fr: "Conception de sites internet élégants, performants et adaptés à votre activité. Développement Next.js & design responsive avec SEO intégré.",
-      en: "Designing elegant, high-performance websites tailored to your business. Next.js development & responsive design with built-in SEO.",
-      nl: "Ontwerp van elegante, krachtige websites op maat van uw activiteit. Next.js-ontwikkeling & responsive design met geïntegreerde SEO.",
+      fr: "Conception de sites internet élégants, performants et adaptés à votre activité...",
+      en: "Designing elegant, high-performance websites tailored to your business...",
+      nl: "Ontwerp van elegante, krachtige websites op maat van uw activiteit...",
     }[currentLocale],
-
     alternates: {
-      canonical: `${siteUrl}/${currentLocale === "fr" ? "web" : `${currentLocale}/web`}`,
+      canonical: `${siteUrl}/${currentLocale}${path}`,
       languages: {
-        fr: `${siteUrl}/fr/web`,
-        en: `${siteUrl}/en/web`,
-        nl: `${siteUrl}/nl/web`,
-        "x-default": `${siteUrl}/fr/web`,
+        fr: `${siteUrl}/fr${path}`,
+        en: `${siteUrl}/en${path}`,
+        nl: `${siteUrl}/nl${path}`,
+        "x-default": `${siteUrl}/fr${path}`,
       },
     },
-
     openGraph: {
       title: {
         fr: "Votre site internet sur-mesure, performant & élégant",
@@ -38,11 +36,11 @@ export async function generateMetadata({ params }) {
         nl: "Uw op maat gemaakte, krachtige en elegante website",
       }[currentLocale],
       description: {
-        fr: "Je crée des sites personnalisés avec design moderne, fluidité et optimisation SEO dès la base.",
-        en: "I create custom websites with modern design, fluid UX and built-in SEO optimization.",
-        nl: "Ik maak op maat gemaakte websites met modern design, vloeiende ervaring en geïntegreerde SEO.",
+        fr: "Je crée des sites personnalisés avec design moderne, fluidité et optimisation SEO.",
+        en: "I create custom websites with modern design, fluid UX and built-in SEO.",
+        nl: "Ik maak op maat gemaakte websites met modern design en geïntegreerde SEO.",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale === "fr" ? "web" : `${currentLocale}/web`}`,
+      url: `${siteUrl}/${currentLocale}${path}`,
       type: "article",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
@@ -61,7 +59,6 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
-
     twitter: {
       card: "summary_large_image",
       site: "@stephanegamot",
@@ -79,6 +76,7 @@ export async function generateMetadata({ params }) {
     },
   };
 }
+
 
 
 export default function Page() {
