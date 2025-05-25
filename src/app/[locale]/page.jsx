@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     }[currentLocale],
 
     alternates: {
-      canonical: `${siteUrl}/${currentLocale === "fr" ? "" : currentLocale}`,
+      canonical: `${siteUrl}/${currentLocale === "fr" ? "" : `${currentLocale}/`}`,
       languages: {
         fr: `${siteUrl}/fr`,
         en: `${siteUrl}/en`,

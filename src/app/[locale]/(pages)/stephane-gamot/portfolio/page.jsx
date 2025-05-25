@@ -21,7 +21,6 @@ export async function generateMetadata({ params }) {
       en: "Explore a curated selection of tailor-made websites blending elegant design, technical performance, and SEO impact.",
       nl: "Ontdek een selectie op maat gemaakte websites: elegant design, technische prestaties en SEO-impact in één.",
     }[currentLocale],
-
     alternates: {
       canonical: `${siteUrl}/${currentLocale === "fr" ? "stephane-gamot/portfolio" : `${currentLocale}/stephane-gamot/portfolio`}`,
       languages: {
@@ -31,6 +30,7 @@ export async function generateMetadata({ params }) {
         "x-default": `${siteUrl}/fr/stephane-gamot/portfolio`,
       },
     },
+
 
     openGraph: {
       title: {
