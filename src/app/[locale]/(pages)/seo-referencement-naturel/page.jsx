@@ -5,9 +5,10 @@ import SeoHero from '@/components/Heros/SeoHero'
 import BeneficeSeo from '@/components/Benefices/BeneficeSeo'
 
 export async function generateMetadata({ params }) {
-  const { locale } = await Promise.resolve(params);
+  const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
+  const path = slug.length ? `/${slug.join("/")}` : "";
 
   return {
     title: {
@@ -15,23 +16,20 @@ export async function generateMetadata({ params }) {
       en: "Search Engine Optimization (SEO) – Gain visibility",
       nl: "Zoekmachineoptimalisatie (SEO) – Vergroot uw zichtbaarheid",
     }[currentLocale],
-
     description: {
       fr: "Stratégies SEO sur-mesure pour améliorer le positionnement Google de votre site. Audit, contenu, technique, backlinks et suivi personnalisé.",
       en: "Custom SEO strategies to improve your site's Google ranking. Audit, content, technical optimization, backlinks, and personalized support.",
       nl: "Maatwerk SEO-strategieën om uw positie op Google te verbeteren. Audit, inhoud, techniek, backlinks en persoonlijke opvolging.",
     }[currentLocale],
-
     alternates: {
-      canonical: `${siteUrl}/${currentLocale === "fr" ? "seo-referencement-naturel" : `${currentLocale}/seo-referencement-naturel`}`,
+      canonical: `${siteUrl}/${currentLocale}${path}`,
       languages: {
-        fr: `${siteUrl}/fr/seo-referencement-naturel`,
-        en: `${siteUrl}/en/seo-referencement-naturel`,
-        nl: `${siteUrl}/nl/seo-referencement-naturel`,
-        "x-default": `${siteUrl}/fr/seo-referencement-naturel`,
+        fr: `${siteUrl}/fr${path}`,
+        en: `${siteUrl}/en${path}`,
+        nl: `${siteUrl}/nl${path}`,
+        "x-default": `${siteUrl}/fr${path}`,
       },
     },
-
     openGraph: {
       title: {
         fr: "Référencement naturel – Visibilité & stratégie SEO",
@@ -39,11 +37,11 @@ export async function generateMetadata({ params }) {
         nl: "SEO – Zichtbaarheid & strategie op maat",
       }[currentLocale],
       description: {
-        fr: "Optimisez votre site pour Google avec une stratégie sur-mesure, alignée à votre activité et vos objectifs.",
-        en: "Optimize your site for Google with a custom strategy tailored to your business and goals.",
-        nl: "Optimaliseer uw site voor Google met een strategie op maat van uw activiteit en doelstellingen.",
+        fr: "Optimisez votre site pour Google avec une stratégie sur-mesure...",
+        en: "Optimize your site for Google with a custom strategy...",
+        nl: "Optimaliseer uw site voor Google met een strategie op maat...",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale === "fr" ? "seo-referencement-naturel" : `${currentLocale}/seo-referencement-naturel`}`,
+      url: `${siteUrl}/${currentLocale}${path}`,
       type: "article",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
@@ -62,7 +60,6 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
-
     twitter: {
       card: "summary_large_image",
       site: "@stephanegamot",
