@@ -4,10 +4,10 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import WebCta from "@/components/cta/WebCta";
 
 export async function generateMetadata({ params }) {
-  const { locale, slug = [] } = params;
+  const { locale = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
-  const path = slug.length ? `/${slug.join("/")}` : "";
+
 
   return {
     title: {
@@ -21,12 +21,12 @@ export async function generateMetadata({ params }) {
       nl: "Ontwerp van elegante, krachtige websites op maat van uw activiteit...",
     }[currentLocale],
     alternates: {
-      canonical: `${siteUrl}/${currentLocale}${path}`,
+      canonical: `${siteUrl}/${currentLocale}/web`,
       languages: {
-        fr: `${siteUrl}/fr${path}`,
-        en: `${siteUrl}/en${path}`,
-        nl: `${siteUrl}/nl${path}`,
-        "x-default": `${siteUrl}/fr${path}`,
+        fr: `${siteUrl}/fr/web`,
+        en: `${siteUrl}/en/web`,
+        nl: `${siteUrl}/nl/web`,
+        "x-default": `${siteUrl}/fr/web`,
       },
     },
     openGraph: {
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
         en: "I create custom websites with modern design, fluid UX and built-in SEO.",
         nl: "Ik maak op maat gemaakte websites met modern design en geïntegreerde SEO.",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale}${path}`,
+      url: `${siteUrl}/${currentLocale}/web`,
       type: "article",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
