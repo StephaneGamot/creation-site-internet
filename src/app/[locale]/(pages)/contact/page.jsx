@@ -24,12 +24,12 @@ export async function generateMetadata({ params }) {
       nl: "Website nodig, SEO-audit of digitale begeleiding? Laten we uw webproject bespreken.",
     }[currentLocale],
     alternates: {
-      canonical: `${siteUrl}/${currentLocale}${path}`,
+      canonical: `${siteUrl}/${currentLocale}/contact`,
       languages: {
-        fr: `${siteUrl}/fr${path}`,
-        en: `${siteUrl}/en${path}`,
-        nl: `${siteUrl}/nl${path}`,
-        "x-default": `${siteUrl}/fr${path}`,
+        fr: `${siteUrl}/fr/contact`,
+        en: `${siteUrl}/en/contact`,
+        nl: `${siteUrl}/nl/contact`,
+        "x-default": `${siteUrl}/fr/contact`,
       },
     },
     openGraph: {
