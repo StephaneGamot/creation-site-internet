@@ -7,10 +7,10 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export async function generateMetadata({ params }) {
-  const { locale, slug = [] } = params;
+  const { locale = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
-  const path = slug.length ? `/${slug.join("/")}` : "";
+
 
   return {
     title: {

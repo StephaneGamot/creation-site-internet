@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
 
-  const path = slug.length ? `/${slug.join("/")}` : "";
+
 
   return {
     title: {
@@ -31,12 +31,12 @@ export async function generateMetadata({ params }) {
     }[currentLocale],
 
     alternates: {
-      canonical: `${siteUrl}/${currentLocale}${path}`,
+      canonical: `${siteUrl}/${currentLocale}`,
       languages: {
-        fr: `${siteUrl}/fr${path}`,
-        en: `${siteUrl}/en${path}`,
-        nl: `${siteUrl}/nl${path}`,
-        "x-default": `${siteUrl}/fr${path}`,
+        fr: `${siteUrl}/fr`,
+        en: `${siteUrl}/en`,
+        nl: `${siteUrl}/nl`,
+        "x-default": `${siteUrl}/fr`,
       },
     },
 

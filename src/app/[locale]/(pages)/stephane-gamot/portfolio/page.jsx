@@ -8,7 +8,7 @@ export async function generateMetadata({ params }) {
   const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
-  const path = slug.length ? `/${slug.join("/")}` : "";
+  const path = '/stephane-gamot/portfolio';
 
   return {
     title: {

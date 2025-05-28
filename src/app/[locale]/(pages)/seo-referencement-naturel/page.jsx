@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
         fr: `${siteUrl}/fr${path}`,
         en: `${siteUrl}/en${path}`,
         nl: `${siteUrl}/nl${path}`,
-        'x-default': `${siteUrl}/fr${path}`,
+        'x-default': `${siteUrl}/fr/seo-referencement-naturel`,
       },
     },
 
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
         en: "Optimize your site for Google with a custom strategy...",
         nl: "Optimaliseer uw site voor Google met een strategie op maat...",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale}${path}`,
+      url: `${siteUrl}/${currentLocale}/seo-referencement-naturel`,
       type: "article",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
