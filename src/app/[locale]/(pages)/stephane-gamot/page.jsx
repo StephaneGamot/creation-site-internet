@@ -24,12 +24,12 @@ export async function generateMetadata({ params }) {
       nl: "Full-stack ontwikkelaar & SEO-consultant met een sterke achtergrond...",
     }[currentLocale],
     alternates: {
-      canonical: `${siteUrl}/${currentLocale}${path}`,
+      canonical: `${siteUrl}/${currentLocale}/stephane-gamot`,
       languages: {
-        fr: `${siteUrl}/fr${path}`,
-        en: `${siteUrl}/en${path}`,
-        nl: `${siteUrl}/nl${path}`,
-        "x-default": `${siteUrl}/fr${path}`,
+        fr: `${siteUrl}/fr/stephane-gamot`,
+        en: `${siteUrl}/en/stephane-gamot`,
+        nl: `${siteUrl}/nl/stephane-gamot`,
+        "x-default": `${siteUrl}/fr/stephane-gamot`,
       },
     },
     openGraph: {
