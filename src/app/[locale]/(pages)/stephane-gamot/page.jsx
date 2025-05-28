@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
-  const path = slug.length ? `/${slug.join("/")}` : "";
+
 
   return {
     title: {
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
         en: "My journey, values, and technical skills...",
         nl: "Mijn parcours, waarden en vaardigheden...",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale}${path}`,
+      url: `${siteUrl}/${currentLocale}/stephane-gamot`,
       type: "profile",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
