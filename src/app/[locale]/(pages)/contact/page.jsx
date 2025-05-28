@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
         en: "Reach out to discuss your ideas, technical needs, or digital projects.",
         nl: "Neem contact op om uw ideeën, technische behoeften of digitale projecten te bespreken.",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale}${path}`,
+      url: `${siteUrl}/${currentLocale}/contact`,
       type: "article",
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
