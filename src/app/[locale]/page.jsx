@@ -11,7 +11,7 @@ import Citation from "@/components/Citations/Citation";
 import FullJsonLd from "@/components/Seos/FullJsonLd";
 
 export async function generateMetadata({ params }) {
-  const { locale, slug = [] } = params;
+  const { locale = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
 
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }) {
         en: "A website designed around your brand, your audience, and your online visibility. Together, let’s create your ideal digital showcase.",
         nl: "Een site ontworpen voor uw imago, uw doelgroep en uw online vindbaarheid. Laten we samen uw ideale digitale etalage creëren.",
       }[currentLocale],
-      url: `${siteUrl}/${currentLocale}`,
+      url: `${siteUrl}${currentLocale === "fr" ? "" : `/${currentLocale}`}`,
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
       type: "website",

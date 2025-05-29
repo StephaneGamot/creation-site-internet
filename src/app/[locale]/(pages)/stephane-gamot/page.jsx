@@ -19,9 +19,9 @@ export async function generateMetadata({ params }) {
       nl: "Wie ben ik? – Stéphane Gamot, software-ingenieur & webontwikkelaar",
     }[currentLocale],
     description: {
-      fr: "Développeur full-stack & consultant SEO passionné...",
-      en: "Full-stack developer & SEO consultant with a strong background...",
-      nl: "Full-stack ontwikkelaar & SEO-consultant met een sterke achtergrond...",
+      fr: "Ingénieur et développeur web full-stack à Halle. Création de sites modernes, SEO, performance, design sur-mesure et accompagnement stratégique.",
+      en: "Web engineer and full-stack developer in Halle. Creation of modern websites, SEO, performance, custom design and strategic support.",
+      nl: "Software-ingenieur en webontwikkelaar in Halle. Expertise in op maat gemaakte websites, SEO, prestaties en digitale strategie voor bedrijven.",
     }[currentLocale],
     alternates: {
       canonical: `${siteUrl}/${currentLocale}/stephane-gamot`,

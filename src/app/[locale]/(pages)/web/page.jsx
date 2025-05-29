@@ -16,9 +16,9 @@ export async function generateMetadata({ params }) {
       nl: "Maatwerk websites – Stéphane Gamot",
     }[currentLocale],
     description: {
-      fr: "Conception de sites internet élégants, performants et adaptés à votre activité...",
-      en: "Designing elegant, high-performance websites tailored to your business...",
-      nl: "Ontwerp van elegante, krachtige websites op maat van uw activiteit...",
+      fr: "Création de sites web sur-mesure : design élégant, performance, SEO, responsive. Développez votre présence en ligne avec un site qui vous ressemble.",
+      en: "Bespoke website creation: elegant design, high performance, SEO-ready. A custom site tailored to your brand and optimized for conversions.",
+      nl: "Ontwikkeling van op maat gemaakte websites: elegant design, hoge prestaties en SEO. Perfect afgestemd op uw merk en doelen.",
     }[currentLocale],
     alternates: {
       canonical: `${siteUrl}/${currentLocale}/web`,

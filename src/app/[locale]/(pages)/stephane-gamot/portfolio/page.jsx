@@ -17,9 +17,9 @@ export async function generateMetadata({ params }) {
       nl: "Portfolio – Maatwerkprojecten & performante websites",
     }[currentLocale],
     description: {
-      fr: "Découvrez une sélection de sites conçus avec soin...",
-      en: "Explore a curated selection of tailor-made websites...",
-      nl: "Ontdek een selectie op maat gemaakte websites...",
+      fr: "Explorez les projets web de Stéphane Gamot : sites vitrines, SEO, performances, UX et design. Chaque création est unique et adaptée à vos besoins.",
+      en: "Discover Stéphane Gamot’s web projects: custom-designed websites focused on SEO, performance, and modern, conversion-oriented design.",
+      nl: "Ontdek het werk van Stéphane Gamot: op maat gemaakte websites met focus op SEO, snelheid en modern design dat bezoekers aanspreekt en converteert.",
     }[currentLocale],
     alternates: {
       canonical: `${siteUrl}/${currentLocale}${path}`,
