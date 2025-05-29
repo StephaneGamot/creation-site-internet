@@ -1,11 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 export default function SeoHero() {
-  const t = useTranslations('seoHero');
+  const t = useTranslations("seoHero");
+  const locale = useLocale();
 
   return (
     <section className="text-center pt-12 max-w-4xl mx-auto mb-12">
@@ -15,16 +17,14 @@ export default function SeoHero() {
         transition={{ duration: 0.8 }}
         className="text-3xl md:text-4xl font-title font-semibold mb-6"
       >
-        {t('title')}
+        {t("title")}
       </motion.h1>
-      <p className="text-lg md:text-xl text-gray-700 mb-8">
-        {t('text')}
-      </p>
+      <p className="text-lg md:text-xl text-gray-700 mb-8">{t("text")}</p>
       <Link
-        href="/stephane-gamot"
+        href={`/${locale}/stephane-gamot`}
         className="inline-block bg-[#43986b] text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-opacity-90 transition"
       >
-        {t('button')}
+        {t("button")}
       </Link>
     </section>
   );

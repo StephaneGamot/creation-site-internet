@@ -1,14 +1,13 @@
-
-import SeoCta from '@/components/cta/SeoCta'
-import Testimonials from '@/components/Testimonials/Testimonials'
-import SeoHero from '@/components/Heros/SeoHero'
-import BeneficeSeo from '@/components/Benefices/BeneficeSeo'
+import SeoCta from "@/components/cta/SeoCta";
+import Testimonials from "@/components/Testimonials/Testimonials";
+import SeoHero from "@/components/Heros/SeoHero";
+import BeneficeSeo from "@/components/Benefices/BeneficeSeo";
 
 export async function generateMetadata({ params }) {
   const { locale, slug = [] } = params;
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
-  const path = '/seo-referencement-naturel';  
+  const path = "/seo-referencement-naturel";
 
   return {
     title: {
@@ -21,13 +20,13 @@ export async function generateMetadata({ params }) {
       en: "Custom SEO strategies to improve your site's Google ranking. Audit, content, technical optimization, backlinks, and personalized support.",
       nl: "Maatwerk SEO-strategieën om uw positie op Google te verbeteren. Audit, inhoud, techniek, backlinks en persoonlijke opvolging.",
     }[currentLocale],
-   alternates: {
-      canonical: `${siteUrl}/${currentLocale}${path}`,          // ✅ FR → …/fr/seo-referencement-naturel
+    alternates: {
+      canonical: `${siteUrl}/${currentLocale}${path}`, // ✅ FR → …/fr/seo-referencement-naturel
       languages: {
         fr: `${siteUrl}/fr${path}`,
         en: `${siteUrl}/en${path}`,
         nl: `${siteUrl}/nl${path}`,
-        'x-default': `${siteUrl}/fr/seo-referencement-naturel`,
+        "x-default": `${siteUrl}/fr/seo-referencement-naturel`,
       },
     },
 
@@ -79,19 +78,13 @@ export async function generateMetadata({ params }) {
   };
 }
 
-
-
 export default function Page() {
   return (
     <div className="px-6 md:px-12  space-y-24 bg-gray-100 text-gray-900 font-body">
-
-     <SeoHero />
-     
-    <BeneficeSeo />
-
-    <SeoCta />
-
-            <Testimonials ids={[22, 23, 25]} />
+      <SeoHero />
+      <BeneficeSeo />
+      <SeoCta />
+      <Testimonials ids={[22, 23, 25]} />
     </div>
-  )
+  );
 }
