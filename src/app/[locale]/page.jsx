@@ -51,7 +51,7 @@ export async function generateMetadata({ params }) {
         en: "A website designed around your brand, your audience, and your online visibility. Together, let’s create your ideal digital showcase.",
         nl: "Een site ontworpen voor uw imago, uw doelgroep en uw online vindbaarheid. Laten we samen uw ideale digitale etalage creëren.",
       }[currentLocale],
-      url: `${siteUrl}${currentLocale === "fr" ? "" : `/${currentLocale}`}`,
+      url: `${siteUrl}/${currentLocale}`,
       siteName: "Création Site Internet",
       locale: `${currentLocale}_BE`,
       type: "website",
