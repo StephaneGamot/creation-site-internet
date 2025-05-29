@@ -28,17 +28,17 @@
       {
         "title": "Création de site internet",
         "description": "Sites vitrines, blogs ou boutiques, conçus avec soin pour refléter votre image et vos objectifs.",
-        "link": "/web"
+        "link": "/fr/web"
       },
       {
         "title": "SEO & Référencement naturel",
         "description": "Optimisation complète de votre site pour améliorer votre positionnement sur Google.",
-        "link": "/seo-referencement-naturel"
+        "link": "/fr/seo-referencement-naturel"
       },
       {
         "title": "Portfolio de réalisations",
         "description": "Découvrez mes projets récents, entre esthétique soignée et performance digitale.",
-        "link": "/stephane-gamot/portfolio"
+        "link": "/fr/stephane-gamot/portfolio"
       }
     ]
   },

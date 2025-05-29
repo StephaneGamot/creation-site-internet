@@ -4,8 +4,10 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import WebCta from "@/components/cta/WebCta";
 
 export async function generateMetadata({ params }) {
-  const { locale = [] } = params;
+  const { locale } = await Promise.resolve(params);
   const currentLocale = locale ?? "fr";
+
+
   const siteUrl = "https://www.creation-site-internet.dev";
 
 

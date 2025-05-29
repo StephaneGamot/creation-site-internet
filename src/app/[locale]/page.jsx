@@ -11,7 +11,7 @@ import Citation from "@/components/Citations/Citation";
 import FullJsonLd from "@/components/Seos/FullJsonLd";
 
 export async function generateMetadata({ params }) {
-  const { locale = [] } = params;
+  const { locale } = await Promise.resolve(params);
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
 

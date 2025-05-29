@@ -7,7 +7,7 @@ import StephaneHero from '@/components/Heros/StephaneHero';
 import { useTranslations } from 'next-intl';
 
 export async function generateMetadata({ params }) {
-  const { locale, slug = [] } = params;
+  const { locale } = await Promise.resolve(params);
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
 

@@ -4,7 +4,7 @@ import SeoHero from "@/components/Heros/SeoHero";
 import BeneficeSeo from "@/components/Benefices/BeneficeSeo";
 
 export async function generateMetadata({ params }) {
-  const { locale, slug = [] } = params;
+  const { locale } = await Promise.resolve(params);
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
   const path = "/seo-referencement-naturel";

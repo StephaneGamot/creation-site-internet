@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { projects } from "@/data/projectsData";
 
 export async function generateMetadata({ params }) {
-  const { locale, slug = [] } = params;
+  const { locale } = await Promise.resolve(params);
   const currentLocale = locale ?? "fr";
   const siteUrl = "https://www.creation-site-internet.dev";
   const path = '/stephane-gamot/portfolio';
