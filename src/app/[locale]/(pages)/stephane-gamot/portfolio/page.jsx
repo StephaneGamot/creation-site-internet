@@ -83,7 +83,7 @@ export default function Portfolio() {
   const tp = useTranslations("portfolioProjects");
 
   return (
-    <div className="px-6 md:px-12 py-16 space-y-24 bg-white text-gray-900 font-body">
+    <main className="px-6 md:px-12 py-16 space-y-24 bg-white text-gray-900 font-body">
 
       {/* Hero Section */}
       <section className="text-center max-w-4xl mx-auto">
@@ -136,6 +136,6 @@ export default function Portfolio() {
         <p className="text-lg text-gray-700 mb-6">{t("ctaText")}</p>
         <MeContacterButton />
       </section>
-    </div>
+    </main>
   );
 }

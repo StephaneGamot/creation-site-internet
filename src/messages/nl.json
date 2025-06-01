@@ -325,20 +325,23 @@
   ]
 }
 ,"header": {
-  "logoAlt": "iMac met React-code om een website te maken",
-  "logoTitle": "Websitebouwer & SEO-expert",
-  "menuToggle": "Menu openen",
-  "menuClose": "Menu sluiten",
-  "navigation": {
-    "web": "Op maat gemaakte websites",
-    "seo": "SEO & vindbaarheid",
-    "portfolio": "Portfolio",
-    "about": "Over mij",
-    "contact": "Contact"
-  }
+    "logoAlt": "iMac toont React-code om een website te maken",
+    "logoTitle": "Webontwikkelaar & SEO-specialist",
+    "menuToggle": "Menu openen",
+    "menuClose": "Menu sluiten",
+    "mainNavigation": "Hoofdmenu",
+    "mobileMenuTitle": "Mobiel menu",
+    "navigation": {
+      "web": "Maatwerk websites",
+      "seo": "Natuurlijke SEO",
+      "portfolio": "Portfolio",
+      "about": "Wie ben ik?",
+      "contact": "Contact"
+    }
 },"footer": {
-  "slogan": "Elegante websites & SEO-strategie om uw online aanwezigheid te versterken.",
-  "copyright": "Alle rechten voorbehouden."
+  "ariaLabel": "Voettekst van de website",
+  "slogan": "Elegante en krachtige websites",
+  "copyright": "Alle rechten voorbehouden"
 },
 "webHero": {
   "title": "Op maat gemaakte websites",
@@ -366,6 +369,7 @@
   "text": "Ik begeleid u bij elke stap: van idee tot lancering."
 },"seoHero": {
   "title": "SEO om zichtbaar te zijn op Google",
+  "aria": "Ga naar de pagina van Stéphane Gamot",
   "text": "Een goede website heeft geen nut als hij niet wordt gezien. Ik optimaliseer elke pagina voor zoekmachines én voor uw bezoekers.",
   "button": "Laten we erover praten"
 },"beneficeSeo": {

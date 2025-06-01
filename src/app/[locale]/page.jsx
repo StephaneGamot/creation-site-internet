@@ -94,7 +94,7 @@ export default function HomePage() {
   const t = useTranslations("home");
 
   return (
-    <div className="px-6 md:px-12  space-y-24 bg-gray-100 text-gray-900 font-body">
+    <main id="main-content" className="px-6 md:px-12  space-y-24 bg-gray-100 text-gray-900 font-body">
       <HomePageHero />
       <WhyMe />
       <Gallery />
@@ -103,6 +103,6 @@ export default function HomePage() {
       <Cta />
       <Testimonials ids={[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 16]} />
       <FullJsonLd />
-    </div>
+    </main>
   );
 }

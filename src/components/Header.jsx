@@ -24,27 +24,35 @@ export default function Header() {
 
   return (
     <header className="bg-[#3451a1]">
-      <nav aria-label="Global" className="flex items-center justify-between p-6 [@media(min-width:900px)]:px-8">
+      {/* 🔹 NAVIGATION DESKTOP + TOGGLE MOBILE */}
+      <nav
+        role="navigation"
+        aria-label={t('mainNavigation')}
+        className="flex items-center justify-between p-6 [@media(min-width:900px)]:px-8"
+      >
+        {/* 🔹 Logo */}
         <div className="flex [@media(min-width:900px)]:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5">
             <span className="sr-only">{t("logoTitle")}</span>
-            <Image
-              alt={t("logoAlt")}
-              src={Logo}
-              className="h-8 w-auto"
-            />
+            <Image alt={t("logoAlt")} src={Logo} className="h-8 w-auto" />
           </Link>
         </div>
+
+        {/* 🔹 Mobile button */}
         <div className="flex [@media(min-width:900px)]:hidden">
           <button
             type="button"
+            aria-label={t("menuToggle")}
+            aria-controls="mobile-menu"
+            aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
           >
-            <span className="sr-only">{t("menuToggle")}</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
+
+        {/* 🔹 Desktop links */}
         <div className="hidden [@media(min-width:900px)]:flex [@media(min-width:900px)]:gap-x-12">
           {navigation.map((item) => (
             <Link key={item.href} href={item.href} className="text-sm/6 font-semibold text-gray-900">
@@ -52,33 +60,37 @@ export default function Header() {
             </Link>
           ))}
         </div>
+
+        {/* 🔹 LangSwitcher */}
         <div className="hidden [@media(min-width:900px)]:flex [@media(min-width:900px)]:flex-1 [@media(min-width:900px)]:justify-end">
           <LangSwitcher />
         </div>
       </nav>
 
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="[@media(min-width:900px)]:hidden">
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#3451a1] px-6 py-6 [@media(min-width:900px)]:max-w-sm [@media(min-width:900px)]:ring-1 [@media(min-width:900px)]:ring-gray-900/10">
+      {/* 🔹 MENU MOBILE */}
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="[@media(min-width:900px)]:hidden" id="mobile-menu">
+        <div className="fixed inset-0 z-10" aria-hidden="true" />
+        <DialogPanel
+          aria-labelledby="mobile-menu-title"
+          className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#3451a1] px-6 py-6 [@media(min-width:900px)]:max-w-sm [@media(min-width:900px)]:ring-1 [@media(min-width:900px)]:ring-gray-900/10"
+        >
           <div className="flex items-center justify-between">
             <Link href={`/${locale}`} className="-m-1.5 p-1.5">
               <span className="sr-only">{t("logoTitle")}</span>
-              <Image
-                alt={t("logoAlt")}
-                src={Logo}
-                className="h-8 w-auto"
-              />
+              <Image alt={t("logoAlt")} src={Logo} className="h-8 w-auto" />
             </Link>
             <button
               type="button"
+              aria-label={t("menuClose")}
               onClick={() => setMobileMenuOpen(false)}
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
-              <span className="sr-only">{t("menuClose")}</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
           </div>
+
           <div className="mt-6 flow-root">
+            <h2 id="mobile-menu-title" className="sr-only">{t("mobileMenuTitle")}</h2>
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
@@ -101,4 +113,3 @@ export default function Header() {
     </header>
   )
 }
-

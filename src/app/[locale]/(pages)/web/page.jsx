@@ -83,11 +83,11 @@ export async function generateMetadata({ params }) {
 
 export default function Page() {
   return (
-    <div className="px-6 md:px-12  space-y-24 bg-gray-100 text-gray-900 font-body">
+    <main className="px-6 md:px-12  space-y-24 bg-gray-100 text-gray-900 font-body">
       <WebPageHero />
       <BeneficeWeb />
       <WebCta />
       <Testimonials ids={[14, 17, 18, 19, 21, 20, 12]} />
-    </div>
+    </main>
   );
 }

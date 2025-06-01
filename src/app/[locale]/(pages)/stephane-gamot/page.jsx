@@ -93,7 +93,7 @@ export default function QuiSuisJe() {
   ];
 
   return (
-    <div className="px-6 md:px-12 py-16 space-y-24 bg-white text-gray-900 font-body">
+    <main className="px-6 md:px-12 py-16 space-y-24 bg-white text-gray-900 font-body">
 
       {/* Portrait + Intro */}
       <StephaneHero />
@@ -142,6 +142,6 @@ export default function QuiSuisJe() {
         </p>
         <ContactButton />
       </section>
-    </div>
+    </main>
   );
 }

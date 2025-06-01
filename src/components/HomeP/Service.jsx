@@ -9,14 +9,15 @@ export default function Service() {
   const services = t.raw('list');
 
   return (
-    <section className="max-w-6xl mx-auto py-10 my-8">
-      <h2 className="text-3xl font-title font-semibold mb-8 text-center">
+    <section aria-labelledby="services-title" className="max-w-6xl mx-auto py-10 my-8">
+      <h2 id="services-title" className="text-3xl font-title font-semibold mb-8 text-center">
         {t('title')}
       </h2>
       <div className="grid gap-8 md:grid-cols-3">
         {services.map((service, index) => (
           <Link key={index} href={service.link}>
             <motion.div
+             tabIndex={0}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}

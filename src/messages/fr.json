@@ -329,6 +329,8 @@
     "logoTitle": "Créateur de site internet & référencement naturel",
     "menuToggle": "Ouverture du menu",
     "menuClose": "Fermeture du menu",
+    "mainNavigation": "Menu principal",
+    "mobileMenuTitle": "Menu mobile",
     "navigation": {
       "web": "Sites web sur-mesure",
       "seo": "Référencement naturel",
@@ -337,10 +339,11 @@
       "contact": "Contact"
     }
   },
-  "footer": {
-    "slogan": "Création de site web élégants & stratégie SEO pour valoriser votre présence en ligne.",
-    "copyright": "Tous droits réservés."
-  },
+ "footer": {
+  "ariaLabel": "Pied de page du site",
+  "slogan": "Sites web élégants et performants",
+  "copyright": "Tous droits réservés"
+},
   "webHero": {
     "title": "Sites internet sur-mesure",
     "text": "Je conçois des sites vitrines, blogs ou boutiques en ligne à votre image : rapides, élégants, performants, accessibles, sécurisés et conçus pour durer dans le temps."
@@ -385,7 +388,8 @@
   "seoHero": {
     "title": "Référencement naturel (SEO) pour être visible sur Google",
     "text": "Un bon site ne sert à rien s’il n’est pas vu. J’optimise chaque page pour les moteurs de recherche et pour vos visiteurs.",
-    "button": "En parler ensemble"
+    "button": "En parler ensemble",
+    "aria": "Accéder à la page Stéphane Gamot"
   },"seoCta": {
   "title": "Besoin de booster votre visibilité ?",
   "text": "Discutons ensemble d’une stratégie sur-mesure pour faire remonter votre site dans les résultats."

@@ -33,8 +33,8 @@ export default function Skills() {
 
       
       return (
-        <section className="max-w-5xl mx-auto text-center space-y-8">
-          <h2 className="text-2xl font-title font-semibold">{t('title')}</h2>
+        <section aria-labelledby="skills-title" className="max-w-5xl mx-auto text-center space-y-8">
+          <h2 id="skills-title" className="text-2xl font-title font-semibold">{t('title')}</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {skills.map((skill, i) => (
               <span

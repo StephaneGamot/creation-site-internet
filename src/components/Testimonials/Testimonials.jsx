@@ -17,10 +17,10 @@ export default function Testimonials({ ids = [] }) {
   }
 
   return (
-    <div className="bg-white py-12 rounded-2xl">
+    <section aria-labelledby="testimonials-title" className="bg-white py-12 rounded-2xl">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-xl/7 font-semibold">{t("title")}</h2>
+          <h2 id="testimonials-title" className="text-xl/7 font-semibold">{t("title")}</h2>
           <p className="mt-2 text-balance text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
             {t("subtitle")}
           </p>
@@ -52,6 +52,6 @@ export default function Testimonials({ ids = [] }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

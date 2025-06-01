@@ -9,14 +9,15 @@ export default function WhyMe() {
   const whyMeList = t.raw('list'); // Accès brut au tableau traduit
 
   return (
-    <section className="max-w-6xl py-10 mx-auto my-8">
-      <h2 className="text-3xl font-title font-semibold mb-8 text-center">
+    <section aria-labelledby="whyme-title" className="max-w-6xl py-10 mx-auto my-8">
+      <h2 id="whyme-title" className="text-3xl font-title font-semibold mb-8 text-center">
         {t('title')}
       </h2>
       <div className="grid gap-8 md:grid-cols-3">
         {whyMeList.map((item, index) => (
           <motion.div
             key={index}
+            tabIndex={0}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}

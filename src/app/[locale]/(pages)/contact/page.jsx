@@ -6,7 +6,6 @@ export async function generateMetadata({ params }) {
 
   const siteUrl = "https://www.creation-site-internet.dev";
 
-
   return {
     title: {
       fr: "Me contacter – Stéphane Gamot, développeur web freelance",
@@ -75,11 +74,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-
 export default function ContactPage() {
- 
-
   return (
-   <ContactComponent />
+    <main>
+      <ContactComponent />
+    </main>
   );
 }

@@ -10,7 +10,7 @@ export default function StephaneHero() {
   const lines = t.raw("lines");
 
   return (
-    <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section aria-labelledby="stephane-hero-title" className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
@@ -29,7 +29,7 @@ export default function StephaneHero() {
         transition={{ duration: 0.6 }}
         className="space-y-4"
       >
-        <h1 className="text-4xl md:text-5xl font-title font-semibold">
+        <h1 id="stephane-hero-title" className="text-4xl md:text-5xl font-title font-semibold">
           {t("title")}
         </h1>
         {lines.map((line, index) => (

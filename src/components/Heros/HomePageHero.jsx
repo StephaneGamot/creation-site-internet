@@ -8,8 +8,9 @@ export default function HomePageHero() {
   const t = useTranslations('home');
 
   return (
-    <section className="text-center pt-12 max-w-4xl mx-auto mb-12">
+    <section aria-labelledby="home-hero-title" className="text-center pt-12 max-w-4xl mx-auto mb-12">
     <motion.h1
+     id="home-hero-title"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}

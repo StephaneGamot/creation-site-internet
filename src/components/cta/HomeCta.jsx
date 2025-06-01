@@ -8,8 +8,8 @@ export default function Cta() {
   const t = useTranslations('cta');
 
   return (
-    <section className="text-center my-20">
-      <h2 className="text-3xl font-title font-semibold mb-4">
+    <section aria-labelledby="cta-title" className="text-center my-20">
+      <h2 id="cta-title" className="text-3xl font-title font-semibold mb-4">
         {t('title')}
       </h2>
       <p className="text-lg text-gray-700 mb-6">

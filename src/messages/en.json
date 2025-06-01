@@ -317,23 +317,26 @@
     }
   ]
 }
-,"header": {
-  "logoAlt": "iMac showing React code to build a website",
-  "logoTitle": "Website creator & SEO expert",
-  "menuToggle": "Open menu",
-  "menuClose": "Close menu",
-  "navigation": {
-    "web": "Custom websites",
-    "seo": "SEO & ranking",
-    "portfolio": "Portfolio",
-    "about": "About me",
-    "contact": "Contact"
-  }
+, "header": {
+    "logoAlt": "iMac showing React code for building a website",
+    "logoTitle": "Website Creator & SEO Expert",
+    "menuToggle": "Open menu",
+    "menuClose": "Close menu",
+    "mainNavigation": "Main navigation",
+    "mobileMenuTitle": "Mobile menu",
+    "navigation": {
+      "web": "Custom websites",
+      "seo": "SEO optimization",
+      "portfolio": "Portfolio",
+      "about": "About me",
+      "contact": "Contact"
+    }
 },"footer": {
-  "slogan": "Elegant website creation & SEO strategy to enhance your online presence.",
-  "copyright": "All rights reserved."
-}
-,"webHero": {
+  "ariaLabel": "Website footer",
+  "slogan": "Elegant and high-performing websites",
+  "copyright": "All rights reserved"
+},
+"webHero": {
   "title": "Custom websites",
   "text": "I design showcase websites, blogs, or e-shops that reflect your identity: fast, elegant, high-performing, accessible, secure, and built to last."
 },"beneficeWeb": {
@@ -375,7 +378,8 @@
 },"seoHero": {
   "title": "SEO to make your website visible on Google",
   "text": "A great website is useless if no one sees it. I optimize every page for search engines and your visitors.",
-  "button": "Let's talk about it"
+  "button": "Let's talk about it",
+   "aria": "Go to Stéphane Gamot's page"
 },"seoCta": {
   "title": "Need to boost your visibility?",
   "text": "Let’s discuss a custom strategy to help your website rise in search results."
