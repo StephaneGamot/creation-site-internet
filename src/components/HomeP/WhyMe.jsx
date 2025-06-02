@@ -9,7 +9,7 @@ export default function WhyMe() {
   const whyMeList = t.raw('list'); // Accès brut au tableau traduit
 
   return (
-    <section aria-labelledby="whyme-title" className="max-w-6xl py-10 mx-auto my-8">
+    <section role="region" aria-labelledby="whyme-title" className="max-w-6xl py-10 mx-auto my-8">
       <h2 id="whyme-title" className="text-3xl font-title font-semibold mb-8 text-center">
         {t('title')}
       </h2>

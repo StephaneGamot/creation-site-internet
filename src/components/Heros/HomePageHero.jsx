@@ -8,7 +8,7 @@ export default function HomePageHero() {
   const t = useTranslations('home');
 
   return (
-    <section aria-labelledby="home-hero-title" className="text-center pt-12 max-w-4xl mx-auto mb-12">
+    <section role="region" aria-labelledby="home-hero-title" className="text-center pt-12 max-w-4xl mx-auto mb-12">
     <motion.h1
      id="home-hero-title"
       initial={{ opacity: 0, y: 40 }}
@@ -18,7 +18,7 @@ export default function HomePageHero() {
     >
 {t('heroTitle')}
     </motion.h1>
-    <p className="text-lg md:text-xl text-gray-700 mb-10">
+    <p role="region" className="text-lg md:text-xl text-gray-700 mb-10">
     {t('heroSubtitle')}
     </p>
   <KnowMoreButton />

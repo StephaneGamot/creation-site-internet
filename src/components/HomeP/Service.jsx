@@ -9,7 +9,7 @@ export default function Service() {
   const services = t.raw('list');
 
   return (
-    <section aria-labelledby="services-title" className="max-w-6xl mx-auto py-10 my-8">
+    <section role="region" aria-labelledby="services-title" className="max-w-6xl mx-auto py-10 my-8">
       <h2 id="services-title" className="text-3xl font-title font-semibold mb-8 text-center">
         {t('title')}
       </h2>

@@ -7,7 +7,7 @@ import IC from "./../../../public/images/IC.webp";
 
 export default function Gallery() {
   return (
-    <section className="py-10 my-8 ">
+    <section className="py-10 my-8" >
       <div className="mx-auto max-w-6xl px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="overflow-hidden rounded-2xl ">
           <Image
