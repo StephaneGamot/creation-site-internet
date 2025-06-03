@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   BuildingOffice2Icon,
@@ -7,7 +7,6 @@ import {
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
 
 export default function ContactComponent() {
   const t = useTranslations("contact");
@@ -149,8 +148,21 @@ export default function ContactComponent() {
               </div>
             </div>
 
-            {/* Champs cachés */}
+            {/* Anti-spam Honeypot */}
+            <div className="sr-only">
+              <label htmlFor="website">Ne pas remplir ce champ</label>
+              <input
+                type="text"
+                id="website"
+                name="_honey"
+                tabIndex="-1"
+                autoComplete="off"
+              />
+            </div>
+
             <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_delay" value="5" />
+
             <input type="hidden" name="_subject" value={t("successSubject")} />
             <input type="hidden" name="_template" value="table" />
             <input
