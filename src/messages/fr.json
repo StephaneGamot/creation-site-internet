@@ -478,13 +478,13 @@
     "massage-courcelles": {
       "title": "Massage à Courcelles",
       "category": "Bien-être",
-      "description": "Création d’un site local et mobile-friendly pour une praticienne en massage à Courcelles.",
+      "description": "Création d’un site local et mobile-friendly pour une praticienne en massage Lahochi à Courcelles.",
       "alt": "Page d’accueil d’un cabinet de massage à Courcelles, ambiance douce."
     },
     "finance-site": {
       "title": "Site de finance personnelle",
       "category": "Finance",
-      "description": "Un site sobre et structuré pour accompagner les utilisateurs dans la gestion de leurs finances.",
+      "description": "Un site bancaire sobre et structuré pour accompagner les utilisateurs dans la gestion de leurs finances.",
       "alt": "Interface d’un site financier clair et intuitif."
     },
     "massage-site": {
@@ -496,19 +496,19 @@
     "karate-federation": {
       "title": "Site d'une fédération de karaté",
       "category": "Sport",
-      "description": "Un site dynamique et fédérateur pour présenter les cours, événements et inscriptions en ligne.",
+      "description": "Un site dynamique de karaté shotokan pour présenter les cours, événements et inscriptions en ligne.",
       "alt": "Page dédiée à une fédération de karaté avec planning et infos."
     },
     "real-estate": {
       "title": "Agence immobilière locale",
       "category": "Immobilier",
-      "description": "Site vitrine élégant avec galerie dynamique, géolocalisation et contact rapide pour l’agence.",
+      "description": "Site vitrine élégant avec galerie dynamique, géolocalisation et contact rapide pour l’agence immobilière.",
       "alt": "Site élégant pour une agence immobilière de proximité."
     },
     "creative-agency": {
       "title": "Agence multimédia créative",
       "category": "Création",
-      "description": "Un site moderne et coloré pour présenter les services vidéo, photo et création de contenu.",
+      "description": "Un site moderne et coloré pour présenter de nombreux services vidéos, photos et créations de contenu.",
       "alt": "Aperçu d’un site dynamique pour une agence créative."
     },
     "gaming-platform": {
@@ -532,13 +532,13 @@
     "fitness-app": {
       "title": "Application sportive",
       "category": "Application",
-      "description": "Une interface fluide et interactive pour suivre les performances et programmes d'entraînement.",
+      "description": "Une interface d'application fluide et interactive pour suivre les performances et programmes d'entraînement.",
       "alt": "Interface mobile pour suivi sportif personnalisé."
     },
     "hr-app": {
       "title": "Application gestion de personnel",
       "category": "Application",
-      "description": "Une webapp intuitive avec gestion des absences, planning, contrats et dashboard RH.",
+      "description": "Une webapp intuitive avec gestion des absences, planning du personnel & évenements, contrats et dashboard RH.",
       "alt": "Application RH pour la gestion de personnel simplifiée."
     },
     "ai-startup": {
@@ -550,7 +550,7 @@
     "mountain-camping": {
       "title": "Camping en montagne",
       "category": "Tourisme",
-      "description": "Site nature et immersif pour un camping niché en altitude, avec réservation et infos pratiques.",
+      "description": "Site nature et immersif pour un camping semi sauvage niché en altitude, avec réservation et infos pratiques.",
       "alt": "Site de réservation pour un camping de montagne."
     },
     "astro-site": {

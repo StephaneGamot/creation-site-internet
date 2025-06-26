@@ -1,8 +1,22 @@
 
 import Image from "next/image";
+import Link from "next/link";
 import MeContacterButton from "@/components/Buttons/ContactButton";
 import { useTranslations } from "next-intl";
 import { projects } from "@/data/projectsData";
+import WebIcon from "./../../../../../../public/images/icons/webIcon.webp"
+import GitHubIcon from "./../../../../../../public/images/icons/github.svg"
+import AngularIcon from "./../../../../../../public/images/icons/angular.svg"
+import JavaIcon from "./../../../../../../public/images/icons/java.svg"
+import JsIcon from "./../../../../../../public/images/icons/js.svg"
+import NextIcon from "./../../../../../../public/images/icons/next.svg"
+import ReactIcon from "./../../../../../../public/images/icons/react.svg"
+import SpringIcon from "./../../../../../../public/images/icons/spring.svg"
+import TailwindIcon from "./../../../../../../public/images/icons/tailwind.svg"
+import WordpressIcon from "./../../../../../../public/images/icons/wordpress.svg"
+import HtmlIcon from "./../../../../../../public/images/icons/html.svg"
+import CssIcon from "./../../../../../../public/images/icons/css.svg"
+import TypeScriptIcon from "./../../../../../../public/images/icons/typescript.svg"
 
 export async function generateMetadata({ params }) {
   const { locale } = await Promise.resolve(params);
@@ -82,6 +96,20 @@ export default function Portfolio() {
   const t = useTranslations("portfolio");
   const tp = useTranslations("portfolioProjects");
 
+  const techIcons = {
+  angular: AngularIcon,
+  react: ReactIcon,
+  nextjs: NextIcon,
+  tailwind: TailwindIcon,
+  js: JsIcon,
+  java: JavaIcon,
+  spring: SpringIcon,
+  wordpress: WordpressIcon,
+  html: HtmlIcon,
+  css: CssIcon,
+  typescript: TypeScriptIcon
+};
+
   return (
     <main className="px-6 md:px-12 py-16 space-y-24 bg-white text-gray-900 font-body">
 
@@ -125,6 +153,40 @@ export default function Portfolio() {
               <p id={`desc-${index}`} className="text-sm text-gray-600 leading-relaxed text-center">
                 {p.description}
               </p>
+
+              <div className="flex justify-between">
+{/* Optional Links */}
+              <div className="mt-4 flex justify-center gap-4">
+                {project.github && (
+                  <Link href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub project">
+                    <Image src={GitHubIcon} alt="GitHub" width={24} height={24} />
+                  </Link>
+                )}
+                {project.site && (
+                  <Link href={project.site} target="_blank" rel="noopener noreferrer" aria-label="Website preview">
+                    <Image src={WebIcon} alt="Live site" width={24} height={24} />
+                  </Link>
+                )}
+              </div>
+
+              {/* Tech stack icons */}
+             <div className="mt-2 flex justify-center gap-2">
+  {project.techStack?.map((tech, i) => {
+    const IconSrc = techIcons[tech];
+    if (!IconSrc) return null; 
+
+    return (
+      <Image
+        key={i}
+        src={IconSrc}
+        alt={tech}
+        width={24}
+        height={24}
+        title={tech}
+      />
+    );
+  })}
+</div></div>
             </div>
           );
         })}
