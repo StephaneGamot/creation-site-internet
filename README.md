@@ -13,7 +13,7 @@ Créer un site vitrine élégant et professionnel, destiné à des indépendants
 ## ⚙️ Stack Technique
 
 - **Framework** : [Next.js 15.3 – App Router](https://nextjs.org/)
-- **Langage** : JavaScript (JSX)
+- **Langage** : JavaScript (JSX), TypeScript en cours
 - **Style** : [Tailwind CSS](https://tailwindcss.com/)
 - **i18n** : [`next-intl`](https://next-intl.dev/) – FR 🇫🇷 / EN 🇬🇧 / NL 🇳🇱
 - **SEO** : Métadonnées dynamiques (`generateMetadata`)
