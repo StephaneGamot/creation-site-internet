@@ -105,7 +105,7 @@ const nextConfig = {
     return [
   {
       source: "/:path*",
-      destination: "https://www.stephanegamot.com/:path*",
+      destination: "https://www.stephanegamot.com/",
       permanent: true,
     },
     /*
