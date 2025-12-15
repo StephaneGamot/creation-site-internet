@@ -103,41 +103,42 @@ const nextConfig = {
 
   async redirects() {
     return [
+  {
+      source: "/:path*",
+      destination: "https://www.stephanegamot.com/:path*",
+      permanent: true,
+    },
+    /*
       {
-        source: "/(.*)",
-        has: [
-          {
-            type: "host",
-            value: "http://www.creation-site-internet.dev",
-          },
-        ],
-        destination: "https://www.creation-site-internet.dev/:1",
-        permanent: true,
-      },{
         source: "/stephane-gamot/portfolio",
         destination: "/fr/stephane-gamot/portfolio",
         permanent: true,
-      },{
+      },
+      {
         source: "/stephane-gamot",
         destination: "/fr/stephane-gamot",
         permanent: true,
-      },{
+      },
+      {
         source: "/",
         destination: "/fr",
         permanent: true,
-      },{
+      },
+      {
         source: "/web",
         destination: "/fr/web",
         permanent: true,
-      },{
+      },
+      {
         source: "/contact",
         destination: "/fr/contact",
         permanent: true,
-      },{
+      },
+      {
         source: "/seo-referencement-naturel",
         destination: "/fr/seo-referencement-naturel",
         permanent: true,
-      }
+      }, */
     ];
   },
 };

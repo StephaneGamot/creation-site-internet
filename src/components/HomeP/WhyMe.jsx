@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl'
 export default function WhyMe() {
   const t = useTranslations('whyMe');
 
-  const whyMeList = t.raw('list'); // Accès brut au tableau traduit
+  const whyMeList = t.raw('list'); 
 
   return (
     <section role="region" aria-labelledby="whyme-title" className="max-w-6xl py-10 mx-auto my-8">
